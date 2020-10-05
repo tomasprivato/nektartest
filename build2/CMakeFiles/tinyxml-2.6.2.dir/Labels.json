@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/tinyxml-2.6.2"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/tinyxml-2.6.2.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/tinyxml-2.6.2-complete.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-install.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-mkdir.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-download.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-update.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-patch.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-configure.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/tinyxml-2.6.2-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"tinyxml-2.6.2"
+		],
+		"name" : "tinyxml-2.6.2"
+	}
+}

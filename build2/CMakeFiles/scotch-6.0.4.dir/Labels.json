@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/scotch-6.0.4"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/scotch-6.0.4.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/scotch-6.0.4-complete.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-install.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-mkdir.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-download.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-update.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-patch.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-configure.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/scotch-6.0.4-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"scotch-6.0.4"
+		],
+		"name" : "scotch-6.0.4"
+	}
+}

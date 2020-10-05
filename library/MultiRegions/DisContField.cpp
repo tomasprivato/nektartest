@@ -4007,6 +4007,14 @@ namespace Nektar
             Array<OneD, int> ElmtID,TraceID;
             GetBoundaryToElmtMap(ElmtID,TraceID);
 
+
+
+            bfr.GetFldBase(m_session,m_bndCondExpansions);
+            //bfr.UpdateBase(time);
+            cout << "baseflow" << bfr.m_baseflow[0].size() << "\n";
+
+            //cout << "bndcondexpansion" << m_bndCondExpansions.size() << "\n";
+
             for(cnt = i = 0; i < m_bndCondExpansions.size(); ++i)
             {
                 MultiRegions::ExpListSharedPtr locExpList;
@@ -4035,6 +4043,27 @@ namespace Nektar
                     // evalaute coefficient
                     coeffeqn.Evaluate(x0, x1, x2, 0.0, coeffphys);
 
+                    cout << "coeffphys0 " << coeffphys[0] << "\n";
+                    cout << "coeffphys1 " << coeffphys[npoints/2] << "\n";
+
+                    cout << "locexplist Npoints " << locExpList->GetNpoints() << "\n";
+
+                    Array<OneD, Array<OneD, NekDouble> > normalsexp ;
+                    Array<OneD, Array<OneD, NekDouble> > normals;
+
+                    for (e = 0; e < locExpList->GetExpSize(); ++e)
+                    {
+                        elmtid = ElmtID[cnt + e];
+                        normals = GetExp(elmtid)->GetTraceNormal(TraceID[cnt + e]);
+                        cout << "e " << e << "\n";
+
+                        for (int j = 0; j < normals.size(); ++j)
+                        {
+
+                            //Vmath::Vcopy(normals[0].size(), normals[j], 1, normalsexp[j] , 1);
+                        }
+                    }
+
                     for(e = 0; e < locExpList->GetExpSize(); ++e)
                     {
                         RobinBCInfoSharedPtr rInfo =
@@ -4045,6 +4074,23 @@ namespace Nektar
                                 locExpList->GetPhys_Offset(e));
 
                         elmtid = ElmtID[cnt+e];
+                        cout << "elmtid " << elmtid << "\n";
+                        cout << "traceid " << TraceID[cnt+e] << "\n";
+
+
+                        //Array<OneD, Array<OneD, NekDouble> > normals = GetExp(elmtid)->GetTraceNormal(TraceID[cnt+e]);
+
+                        //cout << "normal size1 " << normals.size() << "\n";
+                        //cout << "normal size2 " << normals[0].size() << "\n";
+                        cout << "normal " << normals[0][0] << "\n";
+                        cout << "normal " << normals[1][0] << "\n";
+                        
+                        
+                        cout << "arraytemp size1 " << Array_tmp.size() << "\n";
+                        cout << "arraytemp " << Array_tmp[0] << "\n";
+                        
+                        //////////
+
                         // make link list if necessary
                         if(returnval.count(elmtid) != 0)
                         {

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/boost"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/boost.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/boost-complete.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-install.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-mkdir.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-download.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-update.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-patch.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-configure.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-build.rule"
+		},
+		{
+			"file" : "/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/stamp/boost-conf-project-conf.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"boost"
+		],
+		"name" : "boost"
+	}
+}

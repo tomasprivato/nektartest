@@ -36,7 +36,7 @@
 #define NEKTAR_SOLVERS_LINEARISEDADVECTION_H
 
 #include <SolverUtils/Advection/Advection.h>
-#include <LibUtilities/FFT/NektarFFT.h>
+#include <SolverUtils/BaseFlow.h>
 
 
 namespace Nektar
@@ -44,18 +44,7 @@ namespace Nektar
 
 class LinearisedAdvection: public SolverUtils::Advection
 {
-    enum FloquetMatType
-    {
-        eForwardsCoeff,
-        eForwardsPhys
-    };
-
-    /// A map between  matrix keys and their associated block
-    /// matrices.
-    typedef std::map< FloquetMatType, DNekBlkMatSharedPtr> FloquetBlockMatrixMap;
-    /// A shared pointer to a BlockMatrixMap.
-    typedef std::shared_ptr<FloquetBlockMatrixMap> FloquetBlockMatrixMapShPtr;
-
+    
 public:
     friend class MemoryManager<LinearisedAdvection>;
 
@@ -67,41 +56,24 @@ public:
     /// Name of class
     static std::string className;
 
+    BaseFlow bf;
+
+
 protected:
     LibUtilities::SessionReaderSharedPtr m_session;
+
 
     int m_spacedim;
     int m_expdim;
 
-    /// Storage for base flow
-    Array<OneD, Array<OneD, NekDouble> >            m_baseflow;
-    Array<OneD, Array<OneD, NekDouble> >            m_gradBase;
+    
 
-    /// number of slices
-    int                                             m_slices;
-    /// period length
-    NekDouble                                       m_period;
-    /// interpolation vector
-    Array<OneD, Array<OneD, NekDouble> >            m_interp;
-    /// auxiliary variables
-    LibUtilities::NektarFFTSharedPtr                m_FFT;
-    Array<OneD,NekDouble>                           m_tmpIN;
-    Array<OneD,NekDouble>                           m_tmpOUT;
-    bool                                            m_useFFTW;
     /// flag to determine if use single mode or not
     bool                                            m_singleMode;
     /// flag to determine if use half mode or not
     bool                                            m_halfMode;
     /// flag to determine if use multiple mode or not
     bool                                            m_multipleModes;
-
-    DNekBlkMatSharedPtr GetFloquetBlockMatrix(
-            FloquetMatType mattype,
-            bool UseContCoeffs = false) const;
-    DNekBlkMatSharedPtr GenFloquetBlockMatrix(
-            FloquetMatType mattype,
-            bool UseContCoeffs = false) const;
-    FloquetBlockMatrixMapShPtr                      m_FloquetBlockMat;
 
 
     LinearisedAdvection();
@@ -122,32 +94,12 @@ protected:
         const Array<OneD, Array<OneD, NekDouble> > &pFwd = NullNekDoubleArrayofArray,
         const Array<OneD, Array<OneD, NekDouble> > &pBwd = NullNekDoubleArrayofArray);
 
+
     virtual void v_SetBaseFlow(
         const Array<OneD, Array<OneD, NekDouble> >        &inarray,
         const Array<OneD, MultiRegions::ExpListSharedPtr> &fields);
 
-    void UpdateBase(
-        const NekDouble                                    m_slices,
-        const Array<OneD, const NekDouble>                &inarray,
-              Array<OneD, NekDouble>                      &outarray,
-        const NekDouble                                    m_time,
-        const NekDouble                                    m_period);
-
-    void UpdateGradBase(
-        const int                                          var,
-        const MultiRegions::ExpListSharedPtr              &field);
-
-    void DFT(
-        const std::string                                  file,
-              Array<OneD, MultiRegions::ExpListSharedPtr> &pFields,
-        const NekDouble                                    m_slices);
-
-    /// Import Base flow
-    void ImportFldBase(
-              std::string                                  pInfile,
-              Array<OneD, MultiRegions::ExpListSharedPtr> &pFields,
-              int                                          slice);
-
+    
 private:
     ///Parameter for homogeneous expansions
     enum HomogeneousType
@@ -157,9 +109,6 @@ private:
         eHomogeneous3D,
         eNotHomogeneous
     };
-
-    /// flag to determine if use or not the FFT for transformations
-    bool m_useFFT;
 
     enum HomogeneousType m_HomogeneousType;
 

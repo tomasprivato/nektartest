@@ -56,6 +56,7 @@ public:
     /// Name of class
     static std::string className;
 
+
 protected:
     AdjointAdvection();
 

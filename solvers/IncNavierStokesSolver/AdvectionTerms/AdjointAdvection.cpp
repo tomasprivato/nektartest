@@ -94,15 +94,9 @@ void AdjointAdvection::v_Advect(
     }
 
     // Evaluation of the base flow for periodic cases
-    if (m_slices > 1)
-    {
-        for (int i = 0; i < ndim; ++i)
-        {
-            UpdateBase(m_slices, m_interp[i], m_baseflow[i],
-                       m_period-time, m_period);
-            UpdateGradBase(i, fields[i]);
-        }
-    }
+    bf.UpdateBase(bf.m_period-time);
+    bf.UpdateGradBase(fields);
+    
 
     //Evaluate the linearised advection term
     for( int i = 0; i < ndim; ++i)
@@ -135,11 +129,11 @@ void AdjointAdvection::v_Advect(
         }
 
         // Calculate -U_j du'_i/dx_j
-        Vmath::Vmul(nPointsTot,grad[0], 1, m_baseflow[0], 1, outarray[i], 1);
+        Vmath::Vmul(nPointsTot,grad[0], 1, bf.m_baseflow[0], 1, outarray[i], 1);
         for( int j = 1; j < nDerivs; ++j)
         {
             Vmath::Vvtvp(nPointsTot,grad[j], 1,
-                                    m_baseflow[j], 1,
+                                    bf.m_baseflow[j], 1,
                                     outarray[i], 1,
                                     outarray[i], 1);
         }
@@ -153,7 +147,7 @@ void AdjointAdvection::v_Advect(
         }
         for( int j = 0; j < lim; ++j)
         {
-            Vmath::Vvtvp(nPointsTot,m_gradBase[j*nBaseDerivs + i], 1,
+            Vmath::Vvtvp(nPointsTot,bf.m_gradBase[j*nBaseDerivs + i], 1,
                                     velocity[j], 1,
                                     outarray[i], 1,
                                     outarray[i], 1);
