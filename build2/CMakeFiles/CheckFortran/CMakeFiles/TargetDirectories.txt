@@ -1,2 +1,0 @@
-/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/CheckFortran/CMakeFiles/rebuild_cache.dir
-/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/CheckFortran/CMakeFiles/edit_cache.dir
