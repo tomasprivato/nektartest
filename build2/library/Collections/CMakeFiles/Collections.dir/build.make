@@ -189,41 +189,42 @@ Collections_OBJECTS = \
 # External object files for target Collections
 Collections_EXTERNAL_OBJECTS =
 
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/CoalescedGeomData.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/Collection.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/CollectionOptimisation.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/Operator.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/BwdTrans.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/IProductWRTBase.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/PhysDeriv.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/IProductWRTDerivBase.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/IProduct.cpp.o
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/build.make
-library/Collections/libCollections.so.5.0.0: library/LocalRegions/libLocalRegions.so.5.0.0
-library/Collections/libCollections.so.5.0.0: library/SpatialDomains/libSpatialDomains.so.5.0.0
-library/Collections/libCollections.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/Collections/libCollections.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/Collections/libCollections.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/Collections/libCollections.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/Collections/libCollections.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libCollections.so"
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/CoalescedGeomData.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/Collection.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/CollectionOptimisation.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/Operator.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/BwdTrans.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/IProductWRTBase.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/PhysDeriv.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/IProductWRTDerivBase.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/IProduct.cpp.o
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/build.make
+library/Collections/libCollections-g.so.5.0.0: library/LocalRegions/libLocalRegions-g.so.5.0.0
+library/Collections/libCollections-g.so.5.0.0: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+library/Collections/libCollections-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/Collections/libCollections-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/Collections/libCollections-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/Collections/libCollections-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/Collections/libCollections-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/Collections/libCollections-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/Collections/libCollections-g.so.5.0.0: library/Collections/CMakeFiles/Collections.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libCollections-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/Collections && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Collections.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/Collections && $(CMAKE_COMMAND) -E cmake_symlink_library libCollections.so.5.0.0 libCollections.so.5.0.0 libCollections.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/Collections && $(CMAKE_COMMAND) -E cmake_symlink_library libCollections-g.so.5.0.0 libCollections-g.so.5.0.0 libCollections-g.so
 
-library/Collections/libCollections.so: library/Collections/libCollections.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/Collections/libCollections.so
+library/Collections/libCollections-g.so: library/Collections/libCollections-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/Collections/libCollections-g.so
 
 # Rule to build all files generated by this target.
-library/Collections/CMakeFiles/Collections.dir/build: library/Collections/libCollections.so
+library/Collections/CMakeFiles/Collections.dir/build: library/Collections/libCollections-g.so
 
 .PHONY : library/Collections/CMakeFiles/Collections.dir/build
 

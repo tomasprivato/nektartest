@@ -32,8 +32,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/NodeOpti.cpp.o"
   "CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/PreProcessing.cpp.o"
   "CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/ProcessVarOpti.cpp.o"
-  "NekMesh"
-  "NekMesh.pdb"
+  "NekMesh-g"
+  "NekMesh-g.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

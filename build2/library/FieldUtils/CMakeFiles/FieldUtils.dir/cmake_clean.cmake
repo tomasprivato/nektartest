@@ -57,9 +57,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/FieldUtils.dir/ProcessModules/ProcessSurfDistance.cpp.o"
   "CMakeFiles/FieldUtils.dir/ProcessModules/ProcessVorticity.cpp.o"
   "CMakeFiles/FieldUtils.dir/ProcessModules/ProcessWSS.cpp.o"
-  "libFieldUtils.pdb"
-  "libFieldUtils.so"
-  "libFieldUtils.so.5.0.0"
+  "libFieldUtils-g.pdb"
+  "libFieldUtils-g.so"
+  "libFieldUtils-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

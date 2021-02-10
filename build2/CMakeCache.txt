@@ -14,11 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
+//ARPACK library
+ARPACK_LIBRARY:FILEPATH=/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libarpack.so
+
 //Path to a program.
 BIBTEX:FILEPATH=BIBTEX-NOTFOUND
-
-//BLAS and LAPACK libraries
-BLAS_LAPACK:FILEPATH=/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libblas.so;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/liblapack.so
 
 //Path to a library.
 BLAS_blas_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libblas.so
@@ -117,7 +117,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 //\noptions are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used) Debug
 // Release
 //\nRelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -354,7 +354,7 @@ HTLATEX:FILEPATH=HTLATEX-NOTFOUND
 LAPACK_lapack_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/liblapack.so
 
 //Dependencies for the target
-LibUtilities_LIB_DEPENDS:STATIC=general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_thread.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_iostreams.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_program_options.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_filesystem.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_system.so;optimized;/usr/lib/x86_64-linux-gnu/libz.so;debug;/usr/lib/x86_64-linux-gnu/libz.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libtinyxml.a;general;rt;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libblas.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/liblapack.so;
+LibUtilities_LIB_DEPENDS:STATIC=general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libarpack.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_thread.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_iostreams.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_program_options.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_filesystem.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libboost_system.so;optimized;/usr/lib/x86_64-linux-gnu/libz.so;debug;/usr/lib/x86_64-linux-gnu/libz.so;general;/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib/libtinyxml.a;general;rt;general;/usr/lib/x86_64-linux-gnu/liblapack.so;general;/usr/lib/x86_64-linux-gnu/libblas.so;
 
 //Dependencies for the target
 LocalRegions_LIB_DEPENDS:STATIC=general;SpatialDomains;
@@ -402,7 +402,7 @@ NEKTAR_ENABLE_PROFILE:BOOL=OFF
 NEKTAR_ERROR_ON_WARNINGS:BOOL=ON
 
 //Enable Full Debugging.
-NEKTAR_FULL_DEBUG:BOOL=OFF
+NEKTAR_FULL_DEBUG:BOOL=ON
 
 //Build the AcousticSolver.
 NEKTAR_SOLVER_ACOUSTIC:BOOL=OFF
@@ -417,7 +417,7 @@ NEKTAR_SOLVER_CARDIAC_EP:BOOL=OFF
 NEKTAR_SOLVER_COMPRESSIBLE_FLOW:BOOL=OFF
 
 //Build the Diffusion Solver.
-NEKTAR_SOLVER_DIFFUSION:BOOL=ON
+NEKTAR_SOLVER_DIFFUSION:BOOL=OFF
 
 //Build the Dummy solver.
 NEKTAR_SOLVER_DUMMY:BOOL=OFF
@@ -444,17 +444,14 @@ NEKTAR_SOLVER_SHALLOW_WATER:BOOL=OFF
 NEKTAR_SOLVER_VORTEXWAVE:BOOL=OFF
 
 //Include full set of regression tests to this build.
-NEKTAR_TEST_ALL:BOOL=OFF
+NEKTAR_TEST_ALL:BOOL=ON
 
 //Use a hostfile to explicitly specify number of
 //\nslots.
 NEKTAR_TEST_USE_HOSTFILE:BOOL=OFF
 
-//Use the AMD Core Math Library (ACML) for BLAS and Lapack support.
-NEKTAR_USE_ACML:BOOL=OFF
-
 //Use Arpack routines for evaluating eigenvalues and eigenvectors
-NEKTAR_USE_ARPACK:BOOL=OFF
+NEKTAR_USE_ARPACK:BOOL=ON
 
 //Use CCMIO library for binary Star-CCM+ in NekMesh
 NEKTAR_USE_CCM:BOOL=OFF
@@ -477,14 +474,8 @@ NEKTAR_USE_MESHGEN:BOOL=OFF
 //Use Metis library for performing mesh partitioning.
 NEKTAR_USE_METIS:BOOL=OFF
 
-//Use the Intel Math Kernel Library (MKL) for BLAS and Lapack support.
-NEKTAR_USE_MKL:BOOL=OFF
-
 //Use MPI for parallelisation.
 NEKTAR_USE_MPI:BOOL=OFF
-
-//Use OpenBLAS library as a substitute to native BLAS.
-NEKTAR_USE_OPENBLAS:BOOL=OFF
 
 //Enable PETSc parallel matrix solver support.
 NEKTAR_USE_PETSC:BOOL=OFF
@@ -493,7 +484,7 @@ NEKTAR_USE_PETSC:BOOL=OFF
 NEKTAR_USE_SCOTCH:BOOL=ON
 
 //Use the system provided blas and lapack libraries
-NEKTAR_USE_SYSTEM_BLAS_LAPACK:BOOL=OFF
+NEKTAR_USE_SYSTEM_BLAS_LAPACK:BOOL=ON
 
 //Guarantee thread safety in certain core Nektar++ classes.
 NEKTAR_USE_THREAD_SAFETY:BOOL=OFF
@@ -552,8 +543,11 @@ SpatialDomains_LIB_DEPENDS:STATIC=general;StdRegions;general;/home/tomas/Documen
 //Dependencies for the target
 StdRegions_LIB_DEPENDS:STATIC=general;LibUtilities;
 
+//Build arpack libraries from ThirdParty.
+THIRDPARTY_BUILD_ARPACK:BOOL=ON
+
 //Build BLAS and LAPACK libraries from ThirdParty.
-THIRDPARTY_BUILD_BLAS_LAPACK:BOOL=ON
+THIRDPARTY_BUILD_BLAS_LAPACK:BOOL=OFF
 
 //Build Boost libraries
 THIRDPARTY_BUILD_BOOST:BOOL=ON
@@ -590,8 +584,12 @@ ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: ARPACK_LIBRARY
+ARPACK_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BIBTEX
 BIBTEX-ADVANCED:INTERNAL=1
+//BLAS/LAPACK location
+BLAS_LAPACK:INTERNAL=/usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so
 //ADVANCED property for variable: BLAS_blas_LIBRARY
 BLAS_blas_LIBRARY-ADVANCED:INTERNAL=1
 //Have Fortran function sgemm
@@ -656,6 +654,8 @@ Boost_USE_MULTITHREADED-ADVANCED:INTERNAL=1
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: CMAKE_BUILD_TYPE
+CMAKE_BUILD_TYPE-MODIFIED:INTERNAL=ON
 //STRINGS property for variable: CMAKE_BUILD_TYPE
 CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;RelWithDebInfo;MinSizeRel
 //This is the directory where this CMakeCache.txt was created
@@ -858,6 +858,8 @@ NEKTAR_SOLVER_ADR-MODIFIED:INTERNAL=ON
 NEKTAR_SOLVER_CARDIAC_EP-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: NEKTAR_SOLVER_COMPRESSIBLE_FLOW
 NEKTAR_SOLVER_COMPRESSIBLE_FLOW-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: NEKTAR_SOLVER_DIFFUSION
+NEKTAR_SOLVER_DIFFUSION-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: NEKTAR_SOLVER_DUMMY
 NEKTAR_SOLVER_DUMMY-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: NEKTAR_SOLVER_ELASTICITY
@@ -872,10 +874,14 @@ NEKTAR_SOLVER_PULSEWAVE-MODIFIED:INTERNAL=ON
 NEKTAR_SOLVER_SHALLOW_WATER-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: NEKTAR_SOLVER_VORTEXWAVE
 NEKTAR_SOLVER_VORTEXWAVE-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: NEKTAR_TEST_ALL
+NEKTAR_TEST_ALL-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: NEKTAR_USE_ARPACK
+NEKTAR_USE_ARPACK-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: NEKTAR_USE_HDF5
+NEKTAR_USE_HDF5-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: NEKTAR_USE_MEMORY_POOLS
 NEKTAR_USE_MEMORY_POOLS-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: NEKTAR_USE_SYSTEM_BLAS_LAPACK
-NEKTAR_USE_SYSTEM_BLAS_LAPACK-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: NEKTAR_USE_THREAD_SAFETY
 NEKTAR_USE_THREAD_SAFETY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NEKTAR_USE_TINYXML_STL
@@ -896,8 +902,6 @@ SCOTCH_INCLUDE_DIR-ADVANCED:INTERNAL=1
 SCOTCH_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SCOTCH_LIBRARY_DIR
 SCOTCH_LIBRARY_DIR-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: THIRDPARTY_BUILD_BLAS_LAPACK
-THIRDPARTY_BUILD_BLAS_LAPACK-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: TINYXML_INCLUDE_DIR
 TINYXML_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TINYXML_LIBRARY

@@ -101,7 +101,6 @@ utilities/FieldConvert/CMakeFiles/FieldConvert.dir/FieldConvert.cpp.o
  ../library/MultiRegions/MultiRegions.hpp
  ../library/MultiRegions/MultiRegionsDeclspec.h
  ../library/MultiRegions/SubStructuredGraph.h
- ../library/SolverUtils/BaseFlow.h
  ../library/SpatialDomains/Conditions.h
  ../library/SpatialDomains/Curve.hpp
  ../library/SpatialDomains/GeomFactors.h

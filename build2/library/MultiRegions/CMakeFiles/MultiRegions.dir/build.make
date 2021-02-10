@@ -499,6 +499,19 @@ library/MultiRegions/CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.s"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Documents/gitproject/nektar++/library/MultiRegions/SubStructuredGraph.cpp -o CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.s
 
+library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o: library/MultiRegions/CMakeFiles/MultiRegions.dir/flags.make
+library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o: ../library/MultiRegions/BaseFlow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o"
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o -c /home/tomas/Documents/gitproject/nektar++/library/MultiRegions/BaseFlow.cpp
+
+library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiRegions.dir/BaseFlow.cpp.i"
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomas/Documents/gitproject/nektar++/library/MultiRegions/BaseFlow.cpp > CMakeFiles/MultiRegions.dir/BaseFlow.cpp.i
+
+library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiRegions.dir/BaseFlow.cpp.s"
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Documents/gitproject/nektar++/library/MultiRegions/BaseFlow.cpp -o CMakeFiles/MultiRegions.dir/BaseFlow.cpp.s
+
 # Object files for target MultiRegions
 MultiRegions_OBJECTS = \
 "CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyCommDG.cpp.o" \
@@ -534,72 +547,75 @@ MultiRegions_OBJECTS = \
 "CMakeFiles/MultiRegions.dir/PreconditionerDiagonal.cpp.o" \
 "CMakeFiles/MultiRegions.dir/PreconditionerLowEnergy.cpp.o" \
 "CMakeFiles/MultiRegions.dir/PreconditionerBlock.cpp.o" \
-"CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.o"
+"CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.o" \
+"CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o"
 
 # External object files for target MultiRegions
 MultiRegions_EXTERNAL_OBJECTS =
 
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyCommDG.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMap.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMapCG.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMapDG.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/LocTraceToTraceMap.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ContField.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ContField3DHomogeneous1D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ContField3DHomogeneous2D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/DisContField.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/DisContField3DHomogeneous1D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/DisContField3DHomogeneous2D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpListHomogeneous1D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpListHomogeneous2D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList2DHomogeneous1D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList1DHomogeneous2D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList3DHomogeneous1D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList3DHomogeneous2D.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSys.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysKey.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysDirect.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysDirectFull.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysDirectStaticCond.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysIterative.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysIterativeFull.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysIterativeStaticCond.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysStaticCond.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalMatrix.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalMatrixKey.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/Preconditioner.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/PreconditionerDiagonal.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/PreconditionerLowEnergy.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/PreconditionerBlock.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.o
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make
-library/MultiRegions/libMultiRegions.so.5.0.0: library/Collections/libCollections.so.5.0.0
-library/MultiRegions/libMultiRegions.so.5.0.0: library/LocalRegions/libLocalRegions.so.5.0.0
-library/MultiRegions/libMultiRegions.so.5.0.0: library/SpatialDomains/libSpatialDomains.so.5.0.0
-library/MultiRegions/libMultiRegions.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/MultiRegions/libMultiRegions.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/MultiRegions/libMultiRegions.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/MultiRegions/libMultiRegions.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/MultiRegions/libMultiRegions.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX shared library libMultiRegions.so"
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyCommDG.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMap.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMapCG.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMapDG.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/LocTraceToTraceMap.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ContField.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ContField3DHomogeneous1D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ContField3DHomogeneous2D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/DisContField.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/DisContField3DHomogeneous1D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/DisContField3DHomogeneous2D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpListHomogeneous1D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpListHomogeneous2D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList2DHomogeneous1D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList1DHomogeneous2D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList3DHomogeneous1D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/ExpList3DHomogeneous2D.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSys.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysKey.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysDirect.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysDirectFull.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysDirectStaticCond.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysIterative.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysIterativeFull.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysIterativeStaticCond.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalLinSysStaticCond.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalMatrix.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/GlobalMatrixKey.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/Preconditioner.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/PreconditionerDiagonal.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/PreconditionerLowEnergy.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/PreconditionerBlock.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/Collections/libCollections-g.so.5.0.0
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/LocalRegions/libLocalRegions-g.so.5.0.0
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/MultiRegions/libMultiRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/MultiRegions/libMultiRegions-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/MultiRegions/libMultiRegions-g.so.5.0.0: library/MultiRegions/CMakeFiles/MultiRegions.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX shared library libMultiRegions-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MultiRegions.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && $(CMAKE_COMMAND) -E cmake_symlink_library libMultiRegions.so.5.0.0 libMultiRegions.so.5.0.0 libMultiRegions.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/MultiRegions && $(CMAKE_COMMAND) -E cmake_symlink_library libMultiRegions-g.so.5.0.0 libMultiRegions-g.so.5.0.0 libMultiRegions-g.so
 
-library/MultiRegions/libMultiRegions.so: library/MultiRegions/libMultiRegions.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/MultiRegions/libMultiRegions.so
+library/MultiRegions/libMultiRegions-g.so: library/MultiRegions/libMultiRegions-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/MultiRegions/libMultiRegions-g.so
 
 # Rule to build all files generated by this target.
-library/MultiRegions/CMakeFiles/MultiRegions.dir/build: library/MultiRegions/libMultiRegions.so
+library/MultiRegions/CMakeFiles/MultiRegions.dir/build: library/MultiRegions/libMultiRegions-g.so
 
 .PHONY : library/MultiRegions/CMakeFiles/MultiRegions.dir/build
 

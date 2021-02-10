@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FieldConvert.dir/FieldConvert.cpp.o"
-  "FieldConvert"
-  "FieldConvert.pdb"
+  "FieldConvert-g"
+  "FieldConvert-g.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

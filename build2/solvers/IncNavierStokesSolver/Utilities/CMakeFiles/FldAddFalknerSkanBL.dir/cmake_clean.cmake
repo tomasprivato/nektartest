@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FldAddFalknerSkanBL.dir/FldAddFalknerSkanBL.cpp.o"
-  "FldAddFalknerSkanBL"
-  "FldAddFalknerSkanBL.pdb"
+  "FldAddFalknerSkanBL-g"
+  "FldAddFalknerSkanBL-g.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

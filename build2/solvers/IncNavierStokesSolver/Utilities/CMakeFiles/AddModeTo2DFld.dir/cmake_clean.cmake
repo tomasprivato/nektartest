@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "AddModeTo2DFld"
-  "AddModeTo2DFld.pdb"
+  "AddModeTo2DFld-g"
+  "AddModeTo2DFld-g.pdb"
   "CMakeFiles/AddModeTo2DFld.dir/AddModeTo2DFld.cpp.o"
 )
 

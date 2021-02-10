@@ -7,9 +7,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/GlobalMapping.dir/MappingXYofZ.cpp.o"
   "CMakeFiles/GlobalMapping.dir/MappingXofXZ.cpp.o"
   "CMakeFiles/GlobalMapping.dir/MappingXofZ.cpp.o"
-  "libGlobalMapping.pdb"
-  "libGlobalMapping.so"
-  "libGlobalMapping.so.5.0.0"
+  "libGlobalMapping-g.pdb"
+  "libGlobalMapping-g.so"
+  "libGlobalMapping-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

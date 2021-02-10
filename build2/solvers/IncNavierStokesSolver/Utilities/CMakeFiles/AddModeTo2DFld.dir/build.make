@@ -77,34 +77,35 @@ AddModeTo2DFld_OBJECTS = \
 # External object files for target AddModeTo2DFld
 AddModeTo2DFld_EXTERNAL_OBJECTS =
 
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/AddModeTo2DFld.cpp.o
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/build.make
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/SolverUtils/libSolverUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/FieldUtils/libFieldUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/GlobalMapping/libGlobalMapping.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/MultiRegions/libMultiRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/Collections/libCollections.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/LocalRegions/libLocalRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/SpatialDomains/libSpatialDomains.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/StdRegions/libStdRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: library/LibUtilities/libLibUtilities.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libboost_thread.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libboost_iostreams.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libboost_program_options.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libboost_filesystem.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libboost_system.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: /usr/lib/x86_64-linux-gnu/libz.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libtinyxml.a
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libblas.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/liblapack.so
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libscotch.a
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: ThirdParty/dist/lib/libscotcherr.a
-solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AddModeTo2DFld"
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/AddModeTo2DFld.cpp.o
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/build.make
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/SolverUtils/libSolverUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/FieldUtils/libFieldUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/GlobalMapping/libGlobalMapping-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/MultiRegions/libMultiRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/Collections/libCollections-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/LocalRegions/libLocalRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/StdRegions/libStdRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: library/LibUtilities/libLibUtilities-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libarpack.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libboost_thread.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libboost_iostreams.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libboost_program_options.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libboost_filesystem.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libboost_system.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: /usr/lib/x86_64-linux-gnu/libz.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libtinyxml.a
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: /usr/lib/x86_64-linux-gnu/liblapack.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: /usr/lib/x86_64-linux-gnu/libblas.so
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libscotch.a
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: ThirdParty/dist/lib/libscotcherr.a
+solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AddModeTo2DFld-g"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/solvers/IncNavierStokesSolver/Utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AddModeTo2DFld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/build: solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld
+solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/build: solvers/IncNavierStokesSolver/Utilities/AddModeTo2DFld-g
 
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/build
 

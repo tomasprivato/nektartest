@@ -82,7 +82,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"diffusion-solver\" \"diffusionsolver\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"mmfdiffusion\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lapack-3.7.0
+# Target rules for targets named arpack-ng-1.0
 
 # Build rule for target.
-lapack-3.7.0: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lapack-3.7.0
-.PHONY : lapack-3.7.0
+arpack-ng-1.0: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arpack-ng-1.0
+.PHONY : arpack-ng-1.0
 
 # fast build rule for target.
-lapack-3.7.0/fast:
-	$(MAKE) -f CMakeFiles/lapack-3.7.0.dir/build.make CMakeFiles/lapack-3.7.0.dir/build
-.PHONY : lapack-3.7.0/fast
+arpack-ng-1.0/fast:
+	$(MAKE) -f CMakeFiles/arpack-ng-1.0.dir/build.make CMakeFiles/arpack-ng-1.0.dir/build
+.PHONY : arpack-ng-1.0/fast
 
 #=============================================================================
 # Target rules for targets named boost
@@ -257,45 +257,6 @@ FieldConvert: cmake_check_build_system
 FieldConvert/fast:
 	$(MAKE) -f utilities/FieldConvert/CMakeFiles/FieldConvert.dir/build.make utilities/FieldConvert/CMakeFiles/FieldConvert.dir/build
 .PHONY : FieldConvert/fast
-
-#=============================================================================
-# Target rules for targets named MMFDiffusion
-
-# Build rule for target.
-MMFDiffusion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MMFDiffusion
-.PHONY : MMFDiffusion
-
-# fast build rule for target.
-MMFDiffusion/fast:
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build
-.PHONY : MMFDiffusion/fast
-
-#=============================================================================
-# Target rules for targets named DiffusionSolverTimeInt
-
-# Build rule for target.
-DiffusionSolverTimeInt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DiffusionSolverTimeInt
-.PHONY : DiffusionSolverTimeInt
-
-# fast build rule for target.
-DiffusionSolverTimeInt/fast:
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build
-.PHONY : DiffusionSolverTimeInt/fast
-
-#=============================================================================
-# Target rules for targets named DiffusionSolver
-
-# Build rule for target.
-DiffusionSolver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DiffusionSolver
-.PHONY : DiffusionSolver
-
-# fast build rule for target.
-DiffusionSolver/fast:
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build
-.PHONY : DiffusionSolver/fast
 
 #=============================================================================
 # Target rules for targets named IncNavierStokesSolver
@@ -608,7 +569,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... lapack-3.7.0"
+	@echo "... arpack-ng-1.0"
 	@echo "... boost"
 	@echo "... install/local"
 	@echo "... zlib-1.2.7"
@@ -616,9 +577,6 @@ help:
 	@echo "... tinyxml-2.6.2"
 	@echo "... NekMesh"
 	@echo "... FieldConvert"
-	@echo "... MMFDiffusion"
-	@echo "... DiffusionSolverTimeInt"
-	@echo "... DiffusionSolver"
 	@echo "... IncNavierStokesSolver"
 	@echo "... IncNavierStokesSolver-obj"
 	@echo "... CFLStep"

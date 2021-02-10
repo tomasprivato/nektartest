@@ -204,6 +204,7 @@ namespace Nektar
                       DefinesCmdLineArgument("verbose"))
         {
             boost::ignore_unused(pLocToGloMap);
+
         }
 
         /**
@@ -336,6 +337,7 @@ namespace Nektar
             // apply robin boundary conditions to the matrix.
             if(m_robinBCInfo.count(n) != 0) // add robin mass matrix
             {
+
                 RobinBCInfoSharedPtr rBC;
 
                 // declare local matrix from scaled matrix.
@@ -380,6 +382,7 @@ namespace Nektar
 
             if(m_robinBCInfo.count(n) != 0) // add robin mass matrix
             {
+
                 DNekScalMatSharedPtr    tmp_mat;
                 RobinBCInfoSharedPtr rBC;
 

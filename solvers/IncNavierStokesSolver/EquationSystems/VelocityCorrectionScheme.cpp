@@ -559,6 +559,8 @@ namespace Nektar
     {
         m_F = Array<OneD, Array<OneD, NekDouble> > (m_nConvectiveFields);
 
+        cout << "vcs::doinitialise\n";
+
         for (int i = 0; i < m_nConvectiveFields; ++i)
         {
             m_F[i] = Array< OneD, NekDouble> (m_fields[0]->GetTotPoints(), 0.0);
@@ -677,12 +679,16 @@ namespace Nektar
         const NekDouble time,
         const NekDouble aii_Dt)
     {
+
+        std::cout << "time " << time << "\n";
         // Set up flowrate if we're starting for the first time or the value of
         // aii_Dt has changed.
         if (m_flowrate > 0.0 && (aii_Dt != m_flowrateAiidt))
         {
             SetupFlowrate(aii_Dt);
         }
+
+        
 
         int physTot = m_fields[0]->GetTotPoints();
 
@@ -691,14 +697,16 @@ namespace Nektar
 
         // Set up forcing term for pressure Poisson equation
         SetUpPressureForcing(inarray, m_F, aii_Dt);
+        
 
-        // Solve Pressure System
+        // Solve Pressure System ----- robin here
         SolvePressure (m_F[0]);
+        
 
         // Set up forcing term for Helmholtz problems
         SetUpViscousForcing(inarray, m_F, aii_Dt);
 
-        // Solve velocity system
+        // Solve velocity system  -----  robin here
         SolveViscous( m_F, outarray, aii_Dt);
 
         // Apply flowrate correction

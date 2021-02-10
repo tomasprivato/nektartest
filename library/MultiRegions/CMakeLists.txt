@@ -33,6 +33,7 @@ PreconditionerDiagonal.cpp
 PreconditionerLowEnergy.cpp
 PreconditionerBlock.cpp
 SubStructuredGraph.cpp
+BaseFlow.cpp
 )
 
 SET(MULTI_REGIONS_HEADERS
@@ -67,6 +68,7 @@ PreconditionerDiagonal.h
 PreconditionerLowEnergy.h
 PreconditionerBlock.h
 SubStructuredGraph.h
+BaseFlow.h
 )
 
 SET(ASSEMBLY_MAP_HEADERS

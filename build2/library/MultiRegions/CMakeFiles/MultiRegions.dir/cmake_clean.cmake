@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMapCG.cpp.o"
   "CMakeFiles/MultiRegions.dir/AssemblyMap/AssemblyMapDG.cpp.o"
   "CMakeFiles/MultiRegions.dir/AssemblyMap/LocTraceToTraceMap.cpp.o"
+  "CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o"
   "CMakeFiles/MultiRegions.dir/ContField.cpp.o"
   "CMakeFiles/MultiRegions.dir/ContField3DHomogeneous1D.cpp.o"
   "CMakeFiles/MultiRegions.dir/ContField3DHomogeneous2D.cpp.o"
@@ -33,9 +34,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/MultiRegions.dir/PreconditionerDiagonal.cpp.o"
   "CMakeFiles/MultiRegions.dir/PreconditionerLowEnergy.cpp.o"
   "CMakeFiles/MultiRegions.dir/SubStructuredGraph.cpp.o"
-  "libMultiRegions.pdb"
-  "libMultiRegions.so"
-  "libMultiRegions.so.5.0.0"
+  "libMultiRegions-g.pdb"
+  "libMultiRegions-g.so"
+  "libMultiRegions-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

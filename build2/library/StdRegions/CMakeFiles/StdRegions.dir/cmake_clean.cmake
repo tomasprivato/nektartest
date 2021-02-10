@@ -16,9 +16,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/StdRegions.dir/StdSegExp.cpp.o"
   "CMakeFiles/StdRegions.dir/StdTetExp.cpp.o"
   "CMakeFiles/StdRegions.dir/StdTriExp.cpp.o"
-  "libStdRegions.pdb"
-  "libStdRegions.so"
-  "libStdRegions.so.5.0.0"
+  "libStdRegions-g.pdb"
+  "libStdRegions-g.so"
+  "libStdRegions-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

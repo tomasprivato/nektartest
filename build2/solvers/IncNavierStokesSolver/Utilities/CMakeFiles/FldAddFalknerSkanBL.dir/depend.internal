@@ -30,7 +30,6 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/FldAd
  ../library/LibUtilities/Communication/CommMpi.h
  ../library/LibUtilities/Communication/GsLib.hpp
  ../library/LibUtilities/Communication/Transposition.h
- ../library/LibUtilities/FFT/NektarFFT.h
  ../library/LibUtilities/Foundations/Basis.h
  ../library/LibUtilities/Foundations/BasisType.h
  ../library/LibUtilities/Foundations/Foundations.hpp
@@ -84,7 +83,6 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/FldAd
  ../library/MultiRegions/MultiRegions.hpp
  ../library/MultiRegions/MultiRegionsDeclspec.h
  ../library/MultiRegions/SubStructuredGraph.h
- ../library/SolverUtils/BaseFlow.h
  ../library/SpatialDomains/Conditions.h
  ../library/SpatialDomains/Curve.hpp
  ../library/SpatialDomains/GeomFactors.h

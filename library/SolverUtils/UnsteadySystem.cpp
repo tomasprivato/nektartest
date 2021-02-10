@@ -182,6 +182,8 @@ namespace Nektar
         void UnsteadySystem::v_DoSolve()
         {
             ASSERTL0(m_intScheme != 0, "No time integration scheme.");
+
+            cout << "unsteadysystem::dosolve\n";
             
             int i = 1;
             int nvariables = 0;
@@ -222,9 +224,11 @@ namespace Nektar
                 m_fields[m_intVariables[i]]->SetPhysState(false);
             }
 
+
             // Initialise time integration scheme
             m_intSoln = m_intScheme->InitializeScheme( m_timestep, fields,
                                                        m_time, m_ode );
+
 
             // Initialise filters
             for( auto &x : m_filters )
@@ -300,7 +304,7 @@ namespace Nektar
                 if (m_session->GetComm()->GetRank() == 0 &&
                     !((step+1) % m_infosteps))
                 {
-                    cout << "Steps: " << setw(8)  << left << step+1 << " "
+                    cout << "Stepsssss: " << setw(8)  << left << step+1 << " "
                          << "Time: "  << setw(12) << left << m_time;
 
                     if (m_cflSafetyFactor)
@@ -523,6 +527,8 @@ namespace Nektar
          */
         void UnsteadySystem::v_DoInitialise()
         {
+
+            cout << "unsteadysystem::doinitialise\n";
             CheckForRestartTime(m_time, m_nchk);
             SetBoundaryConditions(m_time);
             SetInitialConditions(m_time);

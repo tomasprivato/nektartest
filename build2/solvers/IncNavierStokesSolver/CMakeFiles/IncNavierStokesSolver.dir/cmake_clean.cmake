@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IncNavierStokesSolver.dir/IncNavierStokesSolver.cpp.o"
-  "IncNavierStokesSolver"
-  "IncNavierStokesSolver.pdb"
+  "IncNavierStokesSolver-g"
+  "IncNavierStokesSolver-g.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

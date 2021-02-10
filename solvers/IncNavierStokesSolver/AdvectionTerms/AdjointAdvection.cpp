@@ -94,7 +94,40 @@ void AdjointAdvection::v_Advect(
     }
 
     // Evaluation of the base flow for periodic cases
-    bf.UpdateBase(bf.m_period-time);
+    //bf.UpdateBase(bf.m_period-time);
+    
+    string file = bf.m_session->GetFunctionFilename("BaseFlow", 0);
+
+    if (bf.m_slices > 1)
+    {
+        ASSERTL0(bf.m_session->GetFunctionType("BaseFlow", 0) ==
+                     LibUtilities::eFunctionTypeFile,
+                 "Base flow should be a sequence of files.");
+
+        int step =
+            fmod(time, bf.m_period) / bf.m_session->GetParameter("TimeStep");
+        int adj_step = bf.m_slices - step;
+
+        size_t found = file.find("%d");
+        ASSERTL0(
+            found != string::npos && file.find("%d", found + 1) == string::npos,
+            "Since N_slices is specified, the filename provided for function "
+            "'BaseFlow' must include exactly one instance of the format "
+            "specifier '%d', to index the time-slices.");
+        char *buffer = new char[file.length() + 8];
+
+        sprintf(buffer, file.c_str(), adj_step);
+
+
+        cout << buffer << " " << time << " " << " adjointadvection\n";
+
+        bf.ImportFldBase(buffer, fields, 1);
+
+        delete[] buffer;
+        // DFT(file,pFields,m_slices);
+    }
+    
+    
     bf.UpdateGradBase(fields);
     
 

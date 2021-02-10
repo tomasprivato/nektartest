@@ -36,7 +36,7 @@
 #define NEKTAR_SOLVERS_LINEARISEDADVECTION_H
 
 #include <SolverUtils/Advection/Advection.h>
-#include <SolverUtils/BaseFlow.h>
+#include <MultiRegions/BaseFlow.h>
 
 
 namespace Nektar
@@ -56,7 +56,7 @@ public:
     /// Name of class
     static std::string className;
 
-    BaseFlow bf;
+    MultiRegions::BaseFlow bf;
 
 
 protected:

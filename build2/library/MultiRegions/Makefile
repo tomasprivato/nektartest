@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"diffusion-solver\" \"diffusionsolver\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"mmfdiffusion\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -316,6 +316,33 @@ AssemblyMap/LocTraceToTraceMap.s: AssemblyMap/LocTraceToTraceMap.cpp.s
 AssemblyMap/LocTraceToTraceMap.cpp.s:
 	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make library/MultiRegions/CMakeFiles/MultiRegions.dir/AssemblyMap/LocTraceToTraceMap.cpp.s
 .PHONY : AssemblyMap/LocTraceToTraceMap.cpp.s
+
+BaseFlow.o: BaseFlow.cpp.o
+
+.PHONY : BaseFlow.o
+
+# target to build an object file
+BaseFlow.cpp.o:
+	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.o
+.PHONY : BaseFlow.cpp.o
+
+BaseFlow.i: BaseFlow.cpp.i
+
+.PHONY : BaseFlow.i
+
+# target to preprocess a source file
+BaseFlow.cpp.i:
+	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.i
+.PHONY : BaseFlow.cpp.i
+
+BaseFlow.s: BaseFlow.cpp.s
+
+.PHONY : BaseFlow.s
+
+# target to generate assembly for a file
+BaseFlow.cpp.s:
+	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make library/MultiRegions/CMakeFiles/MultiRegions.dir/BaseFlow.cpp.s
+.PHONY : BaseFlow.cpp.s
 
 ContField.o: ContField.cpp.o
 
@@ -1129,6 +1156,9 @@ help:
 	@echo "... AssemblyMap/LocTraceToTraceMap.o"
 	@echo "... AssemblyMap/LocTraceToTraceMap.i"
 	@echo "... AssemblyMap/LocTraceToTraceMap.s"
+	@echo "... BaseFlow.o"
+	@echo "... BaseFlow.i"
+	@echo "... BaseFlow.s"
 	@echo "... ContField.o"
 	@echo "... ContField.i"
 	@echo "... ContField.s"

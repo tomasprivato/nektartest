@@ -343,50 +343,51 @@ SpatialDomains_OBJECTS = \
 # External object files for target SpatialDomains
 SpatialDomains_EXTERNAL_OBJECTS =
 
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Conditions.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/GeomFactors.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry0D.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry1D.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry2D.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry3D.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/HexGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshGraph.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshGraphXml.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshGraphXmlCompressed.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshPartition.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/PrismGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/PyrGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/QuadGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/SegGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/PointGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/TetGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/TriGeom.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshPartitionScotch.cpp.o
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build.make
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/SpatialDomains/libSpatialDomains.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library libSpatialDomains.so"
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Conditions.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/GeomFactors.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry0D.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry1D.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry2D.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry3D.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/Geometry.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/HexGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshGraph.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshGraphXml.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshGraphXmlCompressed.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshPartition.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/PrismGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/PyrGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/QuadGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/SegGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/PointGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/TetGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/TriGeom.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/MeshPartitionScotch.cpp.o
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build.make
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/SpatialDomains/libSpatialDomains-g.so.5.0.0: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library libSpatialDomains-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SpatialDomains && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpatialDomains.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SpatialDomains && $(CMAKE_COMMAND) -E cmake_symlink_library libSpatialDomains.so.5.0.0 libSpatialDomains.so.5.0.0 libSpatialDomains.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SpatialDomains && $(CMAKE_COMMAND) -E cmake_symlink_library libSpatialDomains-g.so.5.0.0 libSpatialDomains-g.so.5.0.0 libSpatialDomains-g.so
 
-library/SpatialDomains/libSpatialDomains.so: library/SpatialDomains/libSpatialDomains.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/SpatialDomains/libSpatialDomains.so
+library/SpatialDomains/libSpatialDomains-g.so: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/SpatialDomains/libSpatialDomains-g.so
 
 # Rule to build all files generated by this target.
-library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build: library/SpatialDomains/libSpatialDomains.so
+library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build: library/SpatialDomains/libSpatialDomains-g.so
 
 .PHONY : library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build
 

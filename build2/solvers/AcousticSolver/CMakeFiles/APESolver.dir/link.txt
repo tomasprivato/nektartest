@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG -DNEKTAR_RELEASE   -pthread CMakeFiles/APESolver.dir/APESolver.cpp.o  -o APESolver   -L/home/tomas/Documents/gitproject/nektar++/build2/ThirdParty/dist/lib  -Wl,-rpath,:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 

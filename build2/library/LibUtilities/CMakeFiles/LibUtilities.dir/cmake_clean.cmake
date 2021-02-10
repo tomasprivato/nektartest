@@ -67,9 +67,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/LibUtilities.dir/TimeIntegration/TimeIntegrationScheme.cpp.o"
   "CMakeFiles/LibUtilities.dir/TimeIntegration/TimeIntegrationSchemeData.cpp.o"
   "CMakeFiles/LibUtilities.dir/TimeIntegration/TimeIntegrationSolution.cpp.o"
-  "libLibUtilities.pdb"
-  "libLibUtilities.so"
-  "libLibUtilities.so.5.0.0"
+  "libLibUtilities-g.pdb"
+  "libLibUtilities-g.so"
+  "libLibUtilities-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/NonLinearEnergy.dir/NonLinearEnergy.cpp.o"
-  "NonLinearEnergy"
-  "NonLinearEnergy.pdb"
+  "NonLinearEnergy-g"
+  "NonLinearEnergy-g.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

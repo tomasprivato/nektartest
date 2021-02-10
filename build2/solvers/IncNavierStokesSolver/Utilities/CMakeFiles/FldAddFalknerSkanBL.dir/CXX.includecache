@@ -314,14 +314,6 @@ LibUtilities/Communication/Comm.h
 LibUtilities/LibUtilitiesDeclspec.h
 -
 
-../library/LibUtilities/FFT/NektarFFT.h
-LibUtilities/BasicConst/NektarUnivTypeDefs.hpp
--
-LibUtilities/BasicUtils/NekFactory.hpp
--
-LibUtilities/LibUtilitiesDeclspec.h
--
-
 ../library/LibUtilities/Foundations/Basis.h
 LibUtilities/Foundations/FoundationsFwd.hpp
 -
@@ -787,8 +779,6 @@ MultiRegions/AssemblyMap/LocTraceToTraceMap.h
 -
 boost/algorithm/string.hpp
 -
-SolverUtils/BaseFlow.h
--
 
 ../library/MultiRegions/ExpList.h
 boost/core/ignore_unused.hpp
@@ -898,12 +888,6 @@ boost/graph/cuthill_mckee_ordering.hpp
 boost/graph/properties.hpp
 -
 boost/graph/bandwidth.hpp
--
-
-../library/SolverUtils/BaseFlow.h
-LibUtilities/FFT/NektarFFT.h
--
-MultiRegions/ExpList.h
 -
 
 ../library/SpatialDomains/Conditions.h

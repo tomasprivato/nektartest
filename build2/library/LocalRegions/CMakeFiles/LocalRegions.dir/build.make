@@ -301,48 +301,49 @@ LocalRegions_OBJECTS = \
 # External object files for target LocalRegions
 LocalRegions_EXTERNAL_OBJECTS =
 
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion0D.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion1D.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion2D.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion3D.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/HexExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/IndexMapKey.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/MatrixKey.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/NodalTetExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/NodalTriExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/PointExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/PrismExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/PyrExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/QuadExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/SegExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/TetExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/TriExp.cpp.o
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/build.make
-library/LocalRegions/libLocalRegions.so.5.0.0: library/SpatialDomains/libSpatialDomains.so.5.0.0
-library/LocalRegions/libLocalRegions.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/LocalRegions/libLocalRegions.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/LocalRegions/libLocalRegions.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/LocalRegions/libLocalRegions.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library libLocalRegions.so"
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion0D.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion1D.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion2D.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/Expansion3D.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/HexExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/IndexMapKey.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/MatrixKey.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/NodalTetExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/NodalTriExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/PointExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/PrismExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/PyrExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/QuadExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/SegExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/TetExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/TriExp.cpp.o
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/build.make
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/LocalRegions/libLocalRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/LocalRegions/libLocalRegions-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/LocalRegions/libLocalRegions-g.so.5.0.0: library/LocalRegions/CMakeFiles/LocalRegions.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library libLocalRegions-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/LocalRegions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LocalRegions.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/LocalRegions && $(CMAKE_COMMAND) -E cmake_symlink_library libLocalRegions.so.5.0.0 libLocalRegions.so.5.0.0 libLocalRegions.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/LocalRegions && $(CMAKE_COMMAND) -E cmake_symlink_library libLocalRegions-g.so.5.0.0 libLocalRegions-g.so.5.0.0 libLocalRegions-g.so
 
-library/LocalRegions/libLocalRegions.so: library/LocalRegions/libLocalRegions.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/LocalRegions/libLocalRegions.so
+library/LocalRegions/libLocalRegions-g.so: library/LocalRegions/libLocalRegions-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/LocalRegions/libLocalRegions-g.so
 
 # Rule to build all files generated by this target.
-library/LocalRegions/CMakeFiles/LocalRegions.dir/build: library/LocalRegions/libLocalRegions.so
+library/LocalRegions/CMakeFiles/LocalRegions.dir/build: library/LocalRegions/libLocalRegions-g.so
 
 .PHONY : library/LocalRegions/CMakeFiles/LocalRegions.dir/build
 

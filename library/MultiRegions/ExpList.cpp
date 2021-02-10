@@ -2139,6 +2139,7 @@ namespace Nektar
             int nvarcoeffs = mkey.GetNVarCoeffs();
             MatrixStorage matStorage;
 
+
             map<int, RobinBCInfoSharedPtr> RobinBCInfo = GetRobinBCInfo();
 
             switch(mkey.GetMatrixType())
@@ -2275,6 +2276,7 @@ namespace Nektar
             }
             std::string vSolnType = MultiRegions::GlobalSysSolnTypeMap[vType];
 
+
             return GetGlobalLinSysFactory().CreateInstance( vSolnType, mkey,
                                                         vExpList,  locToGloMap);
         }
@@ -2284,7 +2286,9 @@ namespace Nektar
                     const AssemblyMapSharedPtr &locToGloMap)
         {
             std::shared_ptr<ExpList> vExpList = GetSharedThisPtr();
+
             const map<int,RobinBCInfoSharedPtr> vRobinBCInfo = GetRobinBCInfo();
+
 
             MultiRegions::GlobalSysSolnType vType = mkey.GetGlobalSysSolnType();
 

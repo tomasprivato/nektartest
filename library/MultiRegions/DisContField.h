@@ -38,21 +38,22 @@
 
 #include <MultiRegions/MultiRegionsDeclspec.h>
 #include <MultiRegions/MultiRegions.hpp>
+
 #include <MultiRegions/ExpList.h>
+
 #include <SpatialDomains/Conditions.h>
 #include <MultiRegions/GlobalLinSys.h>
 #include <MultiRegions/AssemblyMap/AssemblyMapDG.h>
 #include <MultiRegions/AssemblyMap/LocTraceToTraceMap.h>
 #include <boost/algorithm/string.hpp>
 
-#include <SolverUtils/BaseFlow.h>
 
 
 namespace Nektar
 {
     namespace MultiRegions
     {
-        /// This class is the abstractio  n of a global discontinuous two-
+        /// This class is the abstraction of a global discontinuous two-
         /// dimensional spectral/hp element expansion which approximates the
         /// solution of a set of partial differential equations.
         class DisContField: public ExpList
@@ -100,8 +101,8 @@ namespace Nektar
                 const bool DeclareCoeffPhysArrays = true);
 
             /// Constructs a 1D discontinuous field based on an
-	    /// existing field.  (needed in order to use ContField(
-	    /// const ExpList &In) constructor
+	        /// existing field.  (needed in order to use ContField(
+	        /// const ExpList &In) constructor
             MULTI_REGIONS_EXPORT DisContField(const ExpList &In);
 
             /// Destructor.
@@ -127,7 +128,7 @@ namespace Nektar
                 Array<OneD, NekDouble> &outarray);
 
 
-            BaseFlow bfr;
+
 
         protected:
             /// The number of boundary segments on which Dirichlet boundary
@@ -161,6 +162,10 @@ namespace Nektar
 
             /// Local to global DG mapping for trace space.
             AssemblyMapDGSharedPtr                             m_traceMap;
+
+
+            //Robin primcoeffs
+            Array<OneD, Array<OneD, NekDouble>> m_robinprimcoeff;
 
             /**
              * @brief A set storing the global IDs of any boundary Verts.
@@ -304,6 +309,10 @@ namespace Nektar
                             const bool DeclareCoeffPhysArrays);
             virtual void v_Reset();
 
+            // Evaluate Robin primcoeff at a given time
+
+            void EvaluatePrimCoeff(int i, const NekDouble time = 0.0);
+
             /// Evaluate all boundary conditions at a given time..
             virtual void v_EvaluateBoundaryConditions(
                 const NekDouble   time    = 0.0,
@@ -376,6 +385,8 @@ namespace Nektar
         };
 
         typedef std::shared_ptr<DisContField>   DisContFieldSharedPtr;
+
+
 
         /**
          * Generate the forward or backward state for each trace point.

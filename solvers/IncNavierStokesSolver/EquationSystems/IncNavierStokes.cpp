@@ -176,6 +176,7 @@ namespace Nektar
         m_fieldsRadiationFactor  =
                 Array<OneD, Array<OneD, NekDouble> > (numfields);
 
+
         for (i = 0; i < m_fields.size(); ++i)
         {
             bool Set = false;
@@ -226,6 +227,7 @@ namespace Nektar
             {
                 if(boost::iequals(BndConds[n]->GetUserDefined(),"Radiation"))
                 {
+                    
 
                     int npoints    = BndExp[n]->GetNpoints();
                     Array<OneD, NekDouble> x0(npoints,0.0);
@@ -242,6 +244,10 @@ namespace Nektar
 
                     coeff.Evaluate(x0,x1,x2,m_time,
                                    tmpArray = m_fieldsRadiationFactor[i]+ radpts);
+                    for (int j = 0; j < m_fieldsRadiationFactor[0].size(); ++j)   
+                    {
+                        cout << "rad " << m_fieldsRadiationFactor[0][j] << "\n";
+                    }
                     //Vmath::Neg(npoints,tmpArray = m_fieldsRadiationFactor[i]+ radpts,1);
                     radpts += npoints;
                 }
@@ -363,6 +369,7 @@ namespace Nektar
                     SpatialDomains::eRobin) &&
                 (boost::iequals(type,"Radiation")))
             {
+                
                 for(i = 0; i < BndExp[n]->GetExpSize(); ++i,cnt++)
                 {
                     elmtid = m_fieldsBCToElmtID[m_velocity[fieldid]][cnt];

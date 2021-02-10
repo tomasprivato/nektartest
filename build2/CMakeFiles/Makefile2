@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/tomas/Documents/gitproject/nektar++/build2
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lapack-3.7.0.dir/all
+all: CMakeFiles/arpack-ng-1.0.dir/all
 all: CMakeFiles/boost.dir/all
 all: CMakeFiles/zlib-1.2.7.dir/all
 all: CMakeFiles/scotch-6.0.4.dir/all
@@ -74,7 +74,7 @@ preinstall: docs/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lapack-3.7.0.dir/clean
+clean: CMakeFiles/arpack-ng-1.0.dir/clean
 clean: CMakeFiles/boost.dir/clean
 clean: CMakeFiles/zlib-1.2.7.dir/clean
 clean: CMakeFiles/scotch-6.0.4.dir/clean
@@ -500,9 +500,7 @@ solvers/CompressibleFlowSolver/clean:
 # Directory level rules for directory solvers/DiffusionSolver
 
 # Recursive "all" directory target.
-solvers/DiffusionSolver/all: solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all
-solvers/DiffusionSolver/all: solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all
-solvers/DiffusionSolver/all: solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all
+solvers/DiffusionSolver/all:
 
 .PHONY : solvers/DiffusionSolver/all
 
@@ -512,9 +510,7 @@ solvers/DiffusionSolver/preinstall:
 .PHONY : solvers/DiffusionSolver/preinstall
 
 # Recursive "clean" directory target.
-solvers/DiffusionSolver/clean: solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/clean
-solvers/DiffusionSolver/clean: solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/clean
-solvers/DiffusionSolver/clean: solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/clean
+solvers/DiffusionSolver/clean:
 
 .PHONY : solvers/DiffusionSolver/clean
 
@@ -754,31 +750,31 @@ utilities/NekMesh/clean: utilities/NekMesh/CMakeFiles/NekMesh.dir/clean
 .PHONY : utilities/NekMesh/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lapack-3.7.0.dir
+# Target rules for target CMakeFiles/arpack-ng-1.0.dir
 
 # All Build rule for target.
-CMakeFiles/lapack-3.7.0.dir/all:
-	$(MAKE) -f CMakeFiles/lapack-3.7.0.dir/build.make CMakeFiles/lapack-3.7.0.dir/depend
-	$(MAKE) -f CMakeFiles/lapack-3.7.0.dir/build.make CMakeFiles/lapack-3.7.0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=95,96 "Built target lapack-3.7.0"
-.PHONY : CMakeFiles/lapack-3.7.0.dir/all
+CMakeFiles/arpack-ng-1.0.dir/all:
+	$(MAKE) -f CMakeFiles/arpack-ng-1.0.dir/build.make CMakeFiles/arpack-ng-1.0.dir/depend
+	$(MAKE) -f CMakeFiles/arpack-ng-1.0.dir/build.make CMakeFiles/arpack-ng-1.0.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=93,94 "Built target arpack-ng-1.0"
+.PHONY : CMakeFiles/arpack-ng-1.0.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lapack-3.7.0.dir/rule: cmake_check_build_system
+CMakeFiles/arpack-ng-1.0.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lapack-3.7.0.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/arpack-ng-1.0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
-.PHONY : CMakeFiles/lapack-3.7.0.dir/rule
+.PHONY : CMakeFiles/arpack-ng-1.0.dir/rule
 
 # Convenience name for target.
-lapack-3.7.0: CMakeFiles/lapack-3.7.0.dir/rule
+arpack-ng-1.0: CMakeFiles/arpack-ng-1.0.dir/rule
 
-.PHONY : lapack-3.7.0
+.PHONY : arpack-ng-1.0
 
 # clean rule for target.
-CMakeFiles/lapack-3.7.0.dir/clean:
-	$(MAKE) -f CMakeFiles/lapack-3.7.0.dir/build.make CMakeFiles/lapack-3.7.0.dir/clean
-.PHONY : CMakeFiles/lapack-3.7.0.dir/clean
+CMakeFiles/arpack-ng-1.0.dir/clean:
+	$(MAKE) -f CMakeFiles/arpack-ng-1.0.dir/build.make CMakeFiles/arpack-ng-1.0.dir/clean
+.PHONY : CMakeFiles/arpack-ng-1.0.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/boost.dir
@@ -787,7 +783,7 @@ CMakeFiles/lapack-3.7.0.dir/clean:
 CMakeFiles/boost.dir/all:
 	$(MAKE) -f CMakeFiles/boost.dir/build.make CMakeFiles/boost.dir/depend
 	$(MAKE) -f CMakeFiles/boost.dir/build.make CMakeFiles/boost.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=93,94 "Built target boost"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=95,96 "Built target boost"
 .PHONY : CMakeFiles/boost.dir/all
 
 # Build rule for subdir invocation for target.
@@ -899,12 +895,12 @@ utilities/NekMesh/CMakeFiles/NekMesh.dir/all: library/StdRegions/CMakeFiles/StdR
 utilities/NekMesh/CMakeFiles/NekMesh.dir/all: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/all
 	$(MAKE) -f utilities/NekMesh/CMakeFiles/NekMesh.dir/build.make utilities/NekMesh/CMakeFiles/NekMesh.dir/depend
 	$(MAKE) -f utilities/NekMesh/CMakeFiles/NekMesh.dir/build.make utilities/NekMesh/CMakeFiles/NekMesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=59,60,61,62,63,64,65,66 "Built target NekMesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=58,59,60,61,62,63,64,65 "Built target NekMesh"
 .PHONY : utilities/NekMesh/CMakeFiles/NekMesh.dir/all
 
 # Build rule for subdir invocation for target.
 utilities/NekMesh/CMakeFiles/NekMesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 utilities/NekMesh/CMakeFiles/NekMesh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : utilities/NekMesh/CMakeFiles/NekMesh.dir/rule
@@ -954,111 +950,6 @@ utilities/FieldConvert/CMakeFiles/FieldConvert.dir/clean:
 .PHONY : utilities/FieldConvert/CMakeFiles/FieldConvert.dir/clean
 
 #=============================================================================
-# Target rules for target solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir
-
-# All Build rule for target.
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/LibUtilities/CMakeFiles/LibUtilities.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/LocalRegions/CMakeFiles/LocalRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/StdRegions/CMakeFiles/StdRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/Collections/CMakeFiles/Collections.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/MultiRegions/CMakeFiles/MultiRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/SolverUtils/CMakeFiles/SolverUtils.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/depend
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num= "Built target MMFDiffusion"
-.PHONY : solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all
-
-# Build rule for subdir invocation for target.
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
-	$(MAKE) -f CMakeFiles/Makefile2 solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
-.PHONY : solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule
-
-# Convenience name for target.
-MMFDiffusion: solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule
-
-.PHONY : MMFDiffusion
-
-# clean rule for target.
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/clean:
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/clean
-.PHONY : solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/clean
-
-#=============================================================================
-# Target rules for target solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir
-
-# All Build rule for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/LibUtilities/CMakeFiles/LibUtilities.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/LocalRegions/CMakeFiles/LocalRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/StdRegions/CMakeFiles/StdRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/Collections/CMakeFiles/Collections.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/MultiRegions/CMakeFiles/MultiRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/SolverUtils/CMakeFiles/SolverUtils.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/depend
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num= "Built target DiffusionSolverTimeInt"
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all
-
-# Build rule for subdir invocation for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
-	$(MAKE) -f CMakeFiles/Makefile2 solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule
-
-# Convenience name for target.
-DiffusionSolverTimeInt: solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule
-
-.PHONY : DiffusionSolverTimeInt
-
-# clean rule for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/clean:
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/clean
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/clean
-
-#=============================================================================
-# Target rules for target solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir
-
-# All Build rule for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/LibUtilities/CMakeFiles/LibUtilities.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/LocalRegions/CMakeFiles/LocalRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/SpatialDomains/CMakeFiles/SpatialDomains.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/StdRegions/CMakeFiles/StdRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/Collections/CMakeFiles/Collections.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/MultiRegions/CMakeFiles/MultiRegions.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/SolverUtils/CMakeFiles/SolverUtils.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/depend
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=4 "Built target DiffusionSolver"
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all
-
-# Build rule for subdir invocation for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 78
-	$(MAKE) -f CMakeFiles/Makefile2 solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule
-
-# Convenience name for target.
-DiffusionSolver: solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule
-
-.PHONY : DiffusionSolver
-
-# clean rule for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/clean:
-	$(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/clean
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/clean
-
-#=============================================================================
 # Target rules for target solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir
 
 # All Build rule for target.
@@ -1074,7 +965,7 @@ solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/all: library/
 solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
 	$(MAKE) -f solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/build.make solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/depend
 	$(MAKE) -f solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/build.make solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=23 "Built target IncNavierStokesSolver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=22 "Built target IncNavierStokesSolver"
 .PHONY : solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1101,7 +992,7 @@ solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver.dir/clean:
 solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/all: library/SolverUtils/CMakeFiles/SolverUtils.dir/all
 	$(MAKE) -f solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/build.make solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/depend
 	$(MAKE) -f solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/build.make solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=24,25,26,27,28 "Built target IncNavierStokesSolver-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=23,24,25,26,27,28 "Built target IncNavierStokesSolver-obj"
 .PHONY : solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1208,12 +1099,12 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/all: library/G
 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
 	$(MAKE) -f solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build.make solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/depend
 	$(MAKE) -f solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build.make solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=20 "Built target Fld2DTo2D5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=19 "Built target Fld2DTo2D5"
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/all
 
 # Build rule for subdir invocation for target.
 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 78
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
 	$(MAKE) -f CMakeFiles/Makefile2 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/rule
@@ -1284,7 +1175,7 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/all: 
 
 # Build rule for subdir invocation for target.
 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/rule
@@ -1319,7 +1210,7 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/all: libra
 
 # Build rule for subdir invocation for target.
 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/AddModeTo2DFld.dir/rule
@@ -1349,12 +1240,12 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.
 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
 	$(MAKE) -f solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/build.make solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/depend
 	$(MAKE) -f solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/build.make solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=5 "Built target ExtractMeanModeFromHomo1DFld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=4 "Built target ExtractMeanModeFromHomo1DFld"
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/all
 
 # Build rule for subdir invocation for target.
 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 78
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
 	$(MAKE) -f CMakeFiles/Makefile2 solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/rule
@@ -1373,18 +1264,18 @@ solvers/IncNavierStokesSolver/Utilities/CMakeFiles/ExtractMeanModeFromHomo1DFld.
 # Target rules for target library/LibUtilities/CMakeFiles/LibUtilities.dir
 
 # All Build rule for target.
-library/LibUtilities/CMakeFiles/LibUtilities.dir/all: CMakeFiles/lapack-3.7.0.dir/all
+library/LibUtilities/CMakeFiles/LibUtilities.dir/all: CMakeFiles/arpack-ng-1.0.dir/all
 library/LibUtilities/CMakeFiles/LibUtilities.dir/all: CMakeFiles/boost.dir/all
 library/LibUtilities/CMakeFiles/LibUtilities.dir/all: CMakeFiles/zlib-1.2.7.dir/all
 library/LibUtilities/CMakeFiles/LibUtilities.dir/all: CMakeFiles/tinyxml-2.6.2.dir/all
 	$(MAKE) -f library/LibUtilities/CMakeFiles/LibUtilities.dir/build.make library/LibUtilities/CMakeFiles/LibUtilities.dir/depend
 	$(MAKE) -f library/LibUtilities/CMakeFiles/LibUtilities.dir/build.make library/LibUtilities/CMakeFiles/LibUtilities.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target LibUtilities"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target LibUtilities"
 .PHONY : library/LibUtilities/CMakeFiles/LibUtilities.dir/all
 
 # Build rule for subdir invocation for target.
 library/LibUtilities/CMakeFiles/LibUtilities.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 library/LibUtilities/CMakeFiles/LibUtilities.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : library/LibUtilities/CMakeFiles/LibUtilities.dir/rule
@@ -1408,7 +1299,7 @@ library/LocalRegions/CMakeFiles/LocalRegions.dir/all: library/SpatialDomains/CMa
 library/LocalRegions/CMakeFiles/LocalRegions.dir/all: library/StdRegions/CMakeFiles/StdRegions.dir/all
 	$(MAKE) -f library/LocalRegions/CMakeFiles/LocalRegions.dir/build.make library/LocalRegions/CMakeFiles/LocalRegions.dir/depend
 	$(MAKE) -f library/LocalRegions/CMakeFiles/LocalRegions.dir/build.make library/LocalRegions/CMakeFiles/LocalRegions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=46,47,48,49 "Built target LocalRegions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=45,46,47,48 "Built target LocalRegions"
 .PHONY : library/LocalRegions/CMakeFiles/LocalRegions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1437,7 +1328,7 @@ library/SpatialDomains/CMakeFiles/SpatialDomains.dir/all: library/LibUtilities/C
 library/SpatialDomains/CMakeFiles/SpatialDomains.dir/all: library/StdRegions/CMakeFiles/StdRegions.dir/all
 	$(MAKE) -f library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build.make library/SpatialDomains/CMakeFiles/SpatialDomains.dir/depend
 	$(MAKE) -f library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build.make library/SpatialDomains/CMakeFiles/SpatialDomains.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=84,85,86,87 "Built target SpatialDomains"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=83,84,85,86,87 "Built target SpatialDomains"
 .PHONY : library/SpatialDomains/CMakeFiles/SpatialDomains.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1469,7 +1360,7 @@ library/StdRegions/CMakeFiles/StdRegions.dir/all: library/LibUtilities/CMakeFile
 
 # Build rule for subdir invocation for target.
 library/StdRegions/CMakeFiles/StdRegions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 library/StdRegions/CMakeFiles/StdRegions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : library/StdRegions/CMakeFiles/StdRegions.dir/rule
@@ -1525,7 +1416,7 @@ library/MultiRegions/CMakeFiles/MultiRegions.dir/all: library/StdRegions/CMakeFi
 library/MultiRegions/CMakeFiles/MultiRegions.dir/all: library/Collections/CMakeFiles/Collections.dir/all
 	$(MAKE) -f library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make library/MultiRegions/CMakeFiles/MultiRegions.dir/depend
 	$(MAKE) -f library/MultiRegions/CMakeFiles/MultiRegions.dir/build.make library/MultiRegions/CMakeFiles/MultiRegions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58 "Built target MultiRegions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57 "Built target MultiRegions"
 .PHONY : library/MultiRegions/CMakeFiles/MultiRegions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1559,12 +1450,12 @@ library/SolverUtils/CMakeFiles/SolverUtils.dir/all: library/GlobalMapping/CMakeF
 library/SolverUtils/CMakeFiles/SolverUtils.dir/all: library/FieldUtils/CMakeFiles/FieldUtils.dir/all
 	$(MAKE) -f library/SolverUtils/CMakeFiles/SolverUtils.dir/build.make library/SolverUtils/CMakeFiles/SolverUtils.dir/depend
 	$(MAKE) -f library/SolverUtils/CMakeFiles/SolverUtils.dir/build.make library/SolverUtils/CMakeFiles/SolverUtils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=72,73,74,75,76,77,78,79,80,81,82,83 "Built target SolverUtils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=72,73,74,75,76,77,78,79,80,81,82 "Built target SolverUtils"
 .PHONY : library/SolverUtils/CMakeFiles/SolverUtils.dir/all
 
 # Build rule for subdir invocation for target.
 library/SolverUtils/CMakeFiles/SolverUtils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 library/SolverUtils/CMakeFiles/SolverUtils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : library/SolverUtils/CMakeFiles/SolverUtils.dir/rule
@@ -1588,12 +1479,12 @@ library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/all: library/SpatialDomains/CMa
 library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/all: library/StdRegions/CMakeFiles/StdRegions.dir/all
 	$(MAKE) -f library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build.make library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/depend
 	$(MAKE) -f library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build.make library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=67,68,69,70 "Built target NekMeshUtils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=66,67,68,69,70 "Built target NekMeshUtils"
 .PHONY : library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/all
 
 # Build rule for subdir invocation for target.
 library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles 0
 .PHONY : library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/rule
@@ -1620,7 +1511,7 @@ library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all: library/Collections/CMak
 library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all: library/MultiRegions/CMakeFiles/MultiRegions.dir/all
 	$(MAKE) -f library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build.make library/GlobalMapping/CMakeFiles/GlobalMapping.dir/depend
 	$(MAKE) -f library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build.make library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=21,22 "Built target GlobalMapping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=20,21 "Built target GlobalMapping"
 .PHONY : library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1653,7 +1544,7 @@ library/FieldUtils/CMakeFiles/FieldUtils.dir/all: library/MultiRegions/CMakeFile
 library/FieldUtils/CMakeFiles/FieldUtils.dir/all: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/all
 	$(MAKE) -f library/FieldUtils/CMakeFiles/FieldUtils.dir/build.make library/FieldUtils/CMakeFiles/FieldUtils.dir/depend
 	$(MAKE) -f library/FieldUtils/CMakeFiles/FieldUtils.dir/build.make library/FieldUtils/CMakeFiles/FieldUtils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target FieldUtils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target FieldUtils"
 .PHONY : library/FieldUtils/CMakeFiles/FieldUtils.dir/all
 
 # Build rule for subdir invocation for target.

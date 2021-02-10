@@ -352,6 +352,9 @@ TimeIntegrationScheme::ConstDoubleArray &TimeIntegrationSchemeData::
             MemoryManager<TimeIntegrationSolution>::AllocateSharedPtr(
                 this, nvar, npoints);
 
+
+
+
         TimeIntegrate(deltaT,
                       solvector->GetSolutionVector(),
                       solvector->GetTimeVector(),
@@ -606,6 +609,7 @@ TimeIntegrationSchemeData::TimeIntegrate( const NekDouble deltaT,
             {
                 op.DoImplicitSolve(m_tmp, m_Y, m_T, A(stage, stage) * deltaT);
 
+
                 for (int k = 0; k < m_nvars; k++)
                 {
                     Vmath::Vsub(m_npoints, m_Y[k], 1, m_tmp[k], 1,
@@ -628,6 +632,7 @@ TimeIntegrationSchemeData::TimeIntegrate( const NekDouble deltaT,
             op.DoOdeRhs(m_Y, m_F[stage], m_T);
         }
     }
+
 
     // Next, the solution vector y at the new time level will
     // be calculated.

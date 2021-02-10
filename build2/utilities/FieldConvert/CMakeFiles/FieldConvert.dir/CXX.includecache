@@ -913,8 +913,6 @@ MultiRegions/AssemblyMap/LocTraceToTraceMap.h
 -
 boost/algorithm/string.hpp
 -
-SolverUtils/BaseFlow.h
--
 
 ../library/MultiRegions/DisContField3DHomogeneous1D.h
 MultiRegions/MultiRegionsDeclspec.h
@@ -1100,12 +1098,6 @@ boost/graph/cuthill_mckee_ordering.hpp
 boost/graph/properties.hpp
 -
 boost/graph/bandwidth.hpp
--
-
-../library/SolverUtils/BaseFlow.h
-LibUtilities/FFT/NektarFFT.h
--
-MultiRegions/ExpList.h
 -
 
 ../library/SpatialDomains/Conditions.h

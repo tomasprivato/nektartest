@@ -83,6 +83,8 @@ namespace Nektar
 
             time(&starttime);
 
+            cout << "driverstandard::execute\n";
+
             m_equ[0]->DoInitialise();
             m_equ[0]->DoSolve();
 

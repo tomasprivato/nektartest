@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "Aliasing"
-  "Aliasing.pdb"
+  "Aliasing-g"
+  "Aliasing-g.pdb"
   "CMakeFiles/Aliasing.dir/Aliasing.cpp.o"
 )
 

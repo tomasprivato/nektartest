@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CFLStep"
-  "CFLStep.pdb"
+  "CFLStep-g"
+  "CFLStep-g.pdb"
   "CMakeFiles/CFLStep.dir/CFLStep.cpp.o"
 )
 

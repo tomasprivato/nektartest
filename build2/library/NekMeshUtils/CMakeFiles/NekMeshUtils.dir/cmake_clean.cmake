@@ -19,9 +19,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/NekMeshUtils.dir/MeshElements/Tetrahedron.cpp.o"
   "CMakeFiles/NekMeshUtils.dir/MeshElements/Triangle.cpp.o"
   "CMakeFiles/NekMeshUtils.dir/Module/Module.cpp.o"
-  "libNekMeshUtils.pdb"
-  "libNekMeshUtils.so"
-  "libNekMeshUtils.so.5.0.0"
+  "libNekMeshUtils-g.pdb"
+  "libNekMeshUtils-g.so"
+  "libNekMeshUtils-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

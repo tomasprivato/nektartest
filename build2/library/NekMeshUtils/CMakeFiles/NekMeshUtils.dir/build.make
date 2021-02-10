@@ -343,51 +343,52 @@ NekMeshUtils_OBJECTS = \
 # External object files for target NekMeshUtils
 NekMeshUtils_EXTERNAL_OBJECTS =
 
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/Module/Module.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Mesh.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Element.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Edge.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Face.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/BooleanOperators.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Point.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Node.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Line.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Triangle.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Quadrilateral.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Tetrahedron.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Pyramid.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Prism.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Hexahedron.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADSystem.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADSurf.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADVert.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADCurve.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/ProcessLoadCAD.cpp.o
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build.make
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/SpatialDomains/libSpatialDomains.so.5.0.0
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/NekMeshUtils/libNekMeshUtils.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library libNekMeshUtils.so"
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/Module/Module.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Mesh.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Element.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Edge.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Face.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/BooleanOperators.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Point.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Node.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Line.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Triangle.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Quadrilateral.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Tetrahedron.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Pyramid.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Prism.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/MeshElements/Hexahedron.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADSystem.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADSurf.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADVert.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/CADCurve.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/CADSystem/ProcessLoadCAD.cpp.o
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build.make
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0: library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library libNekMeshUtils-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/NekMeshUtils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NekMeshUtils.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/NekMeshUtils && $(CMAKE_COMMAND) -E cmake_symlink_library libNekMeshUtils.so.5.0.0 libNekMeshUtils.so.5.0.0 libNekMeshUtils.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/NekMeshUtils && $(CMAKE_COMMAND) -E cmake_symlink_library libNekMeshUtils-g.so.5.0.0 libNekMeshUtils-g.so.5.0.0 libNekMeshUtils-g.so
 
-library/NekMeshUtils/libNekMeshUtils.so: library/NekMeshUtils/libNekMeshUtils.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/NekMeshUtils/libNekMeshUtils.so
+library/NekMeshUtils/libNekMeshUtils-g.so: library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/NekMeshUtils/libNekMeshUtils-g.so
 
 # Rule to build all files generated by this target.
-library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build: library/NekMeshUtils/libNekMeshUtils.so
+library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build: library/NekMeshUtils/libNekMeshUtils-g.so
 
 .PHONY : library/NekMeshUtils/CMakeFiles/NekMeshUtils.dir/build
 

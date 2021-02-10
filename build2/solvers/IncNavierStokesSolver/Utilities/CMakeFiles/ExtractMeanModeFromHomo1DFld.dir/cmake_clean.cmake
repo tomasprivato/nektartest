@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ExtractMeanModeFromHomo1DFld.dir/ExtractMeanModeFromHomo1DFld.cpp.o"
-  "ExtractMeanModeFromHomo1DFld"
-  "ExtractMeanModeFromHomo1DFld.pdb"
+  "ExtractMeanModeFromHomo1DFld-g"
+  "ExtractMeanModeFromHomo1DFld-g.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

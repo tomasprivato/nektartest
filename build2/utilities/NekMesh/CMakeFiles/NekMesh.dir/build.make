@@ -525,62 +525,63 @@ NekMesh_OBJECTS = \
 # External object files for target NekMesh
 NekMesh_EXTERNAL_OBJECTS =
 
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputGmsh.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputNek.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputNek5000.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputNekpp.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputPly.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputSem.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputSwan.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputStarTec.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/NekMesh.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/OutputModules/OutputGmsh.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/OutputModules/OutputNekpp.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/OutputModules/OutputSTL.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessBL.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessCurve.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessCurvedEdges.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessCyl.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessDetectSurf.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessExtractSurf.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessExtractTetPrismInterface.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessJac.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessLinkCheck.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessLinear.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessPerAlign.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessScalar.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessSpherigon.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessTetSplit.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessOptiExtract.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessInsertSurface.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessExtrude.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/ProcessVarOpti.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/PreProcessing.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/NodeOpti.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/ElUtil.cpp.o
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/build.make
-utilities/NekMesh/NekMesh: library/NekMeshUtils/libNekMeshUtils.so.5.0.0
-utilities/NekMesh/NekMesh: library/LocalRegions/libLocalRegions.so.5.0.0
-utilities/NekMesh/NekMesh: library/SpatialDomains/libSpatialDomains.so.5.0.0
-utilities/NekMesh/NekMesh: library/StdRegions/libStdRegions.so.5.0.0
-utilities/NekMesh/NekMesh: library/LibUtilities/libLibUtilities.so.5.0.0
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libboost_thread.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libboost_iostreams.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libboost_program_options.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libboost_filesystem.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libboost_system.so
-utilities/NekMesh/NekMesh: /usr/lib/x86_64-linux-gnu/libz.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libtinyxml.a
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libblas.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/liblapack.so
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libscotch.a
-utilities/NekMesh/NekMesh: ThirdParty/dist/lib/libscotcherr.a
-utilities/NekMesh/NekMesh: utilities/NekMesh/CMakeFiles/NekMesh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable NekMesh"
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputGmsh.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputNek.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputNek5000.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputNekpp.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputPly.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputSem.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputSwan.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/InputModules/InputStarTec.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/NekMesh.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/OutputModules/OutputGmsh.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/OutputModules/OutputNekpp.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/OutputModules/OutputSTL.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessBL.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessCurve.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessCurvedEdges.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessCyl.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessDetectSurf.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessExtractSurf.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessExtractTetPrismInterface.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessJac.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessLinkCheck.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessLinear.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessPerAlign.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessScalar.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessSpherigon.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessTetSplit.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessOptiExtract.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessInsertSurface.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessExtrude.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/ProcessVarOpti.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/PreProcessing.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/NodeOpti.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/ProcessModules/ProcessVarOpti/ElUtil.cpp.o
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/build.make
+utilities/NekMesh/NekMesh-g: library/NekMeshUtils/libNekMeshUtils-g.so.5.0.0
+utilities/NekMesh/NekMesh-g: library/LocalRegions/libLocalRegions-g.so.5.0.0
+utilities/NekMesh/NekMesh-g: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+utilities/NekMesh/NekMesh-g: library/StdRegions/libStdRegions-g.so.5.0.0
+utilities/NekMesh/NekMesh-g: library/LibUtilities/libLibUtilities-g.so.5.0.0
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libarpack.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libboost_thread.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libboost_iostreams.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libboost_program_options.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libboost_filesystem.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libboost_system.so
+utilities/NekMesh/NekMesh-g: /usr/lib/x86_64-linux-gnu/libz.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libtinyxml.a
+utilities/NekMesh/NekMesh-g: /usr/lib/x86_64-linux-gnu/liblapack.so
+utilities/NekMesh/NekMesh-g: /usr/lib/x86_64-linux-gnu/libblas.so
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libscotch.a
+utilities/NekMesh/NekMesh-g: ThirdParty/dist/lib/libscotcherr.a
+utilities/NekMesh/NekMesh-g: utilities/NekMesh/CMakeFiles/NekMesh.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable NekMesh-g"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/utilities/NekMesh && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NekMesh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-utilities/NekMesh/CMakeFiles/NekMesh.dir/build: utilities/NekMesh/NekMesh
+utilities/NekMesh/CMakeFiles/NekMesh.dir/build: utilities/NekMesh/NekMesh-g
 
 .PHONY : utilities/NekMesh/CMakeFiles/NekMesh.dir/build
 

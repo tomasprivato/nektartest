@@ -35,9 +35,12 @@
 #include <SolverUtils/Driver.h>
 #include <LibUtilities/BasicUtils/SessionReader.h>
 
+
 using namespace std;
 using namespace Nektar;
 using namespace Nektar::SolverUtils;
+
+
 
 int main(int argc, char *argv[])
 {
@@ -63,6 +66,7 @@ int main(int argc, char *argv[])
 
         // Finalise communications
         session->Finalise();
+        
     }
     catch (const std::runtime_error&)
     {

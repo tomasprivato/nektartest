@@ -36,6 +36,8 @@
 
 #include <MultiRegions/DisContField.h>
 #include <StdRegions/StdSegExp.h>
+#include <MultiRegions/BaseFlow.h>
+
 #include <LibUtilities/Foundations/ManagerAccess.h>
 #include <SpatialDomains/MeshGraph.h>
 #include <LocalRegions/Expansion0D.h>
@@ -44,6 +46,7 @@
 #include <LocalRegions/TriExp.h>
 #include <LocalRegions/HexExp.h>
 #include <LocalRegions/TetExp.h>
+
 
 
 using namespace std;
@@ -619,6 +622,7 @@ namespace Nektar
             m_bndConditions(In.m_bndConditions),
             m_globalBndMat(In.m_globalBndMat),
             m_traceMap(In.m_traceMap),
+            m_robinprimcoeff(In.m_robinprimcoeff),
             m_boundaryTraces(In.m_boundaryTraces),
             m_periodicVerts(In.m_periodicVerts),
             m_periodicFwdCopy(In.m_periodicFwdCopy),
@@ -816,6 +820,8 @@ namespace Nektar
 
             m_bndCondBndWeight = Array<OneD, NekDouble> {bregions.size(), 0.0};
 
+            m_robinprimcoeff = Array<OneD, Array<OneD, NekDouble>> (bregions.size());
+
             // count the number of non-periodic boundary points
             for (auto &it : bregions)
             {
@@ -828,6 +834,8 @@ namespace Nektar
 
                 m_bndCondExpansions[cnt]  = locExpList;
                 m_bndConditions[cnt]      = bc;
+
+                m_robinprimcoeff[cnt] = Array<OneD, NekDouble> (locExpList->GetNpoints(), 0.0);
 
                 std::string type = m_bndConditions[cnt]->GetUserDefined();
 
@@ -2737,6 +2745,7 @@ namespace Nektar
                      "The local to global map is not set up for the requested "
                      "solution type");
 
+
             GlobalLinSysSharedPtr glo_matrix;
             auto matrixIter = m_globalBndMat->find(mkey);
 
@@ -3666,6 +3675,7 @@ namespace Nektar
                         else if (m_bndConditions[i]->GetBoundaryConditionType()
                                  == SpatialDomains::eRobin)
                         {
+
                             SpatialDomains::RobinBCShPtr
                                 bcPtr = std::static_pointer_cast<
                                     SpatialDomains::RobinBoundaryCondition>
@@ -3692,6 +3702,9 @@ namespace Nektar
                             locExpList->IProductWRTBase
                                 (locExpList->GetPhys(),
                                  locExpList->UpdateCoeffs());
+
+
+                            EvaluatePrimCoeff(i, time);
                         }
                         else if (m_bndConditions[i]->GetBoundaryConditionType()
                                  == SpatialDomains::ePeriodic)
@@ -3986,6 +3999,91 @@ namespace Nektar
             }
         }
 
+
+
+        void DisContField::EvaluatePrimCoeff(int i, NekDouble time)
+        {
+
+            MultiRegions::ExpListSharedPtr locExpList = m_bndCondExpansions[i];
+
+            int dim = (m_expType == e2D) ? 2 : 3;
+
+
+            // create explist to evaluate baseflow on
+            Array<OneD, MultiRegions::ExpListSharedPtr> robinfields(dim + 1);
+
+
+            for (int j = 0; j < dim + 1; ++j)
+            {
+                GetBndElmtExpansion(i, robinfields[j]);
+            }
+
+
+            int npoints = locExpList->GetNpoints();
+            MultiRegions::BaseFlow bfr;
+
+            bfr.GetFldBase(m_session, robinfields, true, time);
+            //bfr.UpdateBase(time);
+
+
+            Array<OneD, Array<OneD, NekDouble>> bf_rbc(dim);
+
+            for (int j = 0; j < dim; ++j)
+            {
+                ExtractElmtToBndPhys(i, bfr.m_baseflow[j], bf_rbc[j]);
+            }
+
+            
+            // robin primcoeffs from session file
+            Array<OneD, NekDouble> x0(npoints, 0.0);
+            Array<OneD, NekDouble> x1(npoints, 0.0);
+            Array<OneD, NekDouble> x2(npoints, 0.0);
+            //m_robinprimcoeff[i] = Array<OneD, NekDouble>(npoints);
+
+            locExpList->GetCoords(x0, x1, x2);
+
+            LibUtilities::Equation coeffeqn =
+                std::static_pointer_cast<
+                    SpatialDomains::RobinBoundaryCondition>(m_bndConditions[i])
+                    ->m_robinPrimitiveCoeff;
+
+            // evalaute coefficient
+            coeffeqn.Evaluate(x0, x1, x2, time, m_robinprimcoeff[i]);
+
+            // normals
+
+            Array<OneD, Array<OneD, NekDouble>> normals;
+
+            GetBoundaryNormals(i, normals);
+            // cout << "normalsize " << normals[0].size() << "\n";
+
+            // checking sizes
+            // cout << "size1 " << bfr.m_baseflow.size() << bf_rbc.size() <<
+            // "\n"; cout << "size2 " << normals[0].size() << bf_rbc[0].size() <<
+            // npoints << "\n"; cout << "size3 " << normals[1].size() <<
+            // bf_rbc[1].size() << npoints << "\n";
+
+            // imposing adjoint outflow bc
+            Array<OneD, NekDouble> tmp(npoints, 0.0);
+
+            for (int j = 0; j < dim; ++j)
+            {
+                Vmath::Vvtvp(npoints, bf_rbc[j], 1, normals[j], 1, tmp, 1, tmp,
+                             1);
+            }
+
+            Vmath::Vmul(npoints, tmp, 1, m_robinprimcoeff[i], 1,
+                        m_robinprimcoeff[i], 1);
+
+            cout <<  "evaluateprimcoeff " << m_robinprimcoeff[i][m_robinprimcoeff[i].size()/2] << "\n";
+
+            //for (int j = 0; j < m_robinprimcoeff[i].size(); ++j)
+            //{
+            //    cout << "bf_rbc " << bf_rbc[0][j] << "\n";
+            //}
+
+        }
+
         /**
          * Search through the edge expansions and identify which ones
          * have Robin/Mixed type boundary conditions. If find a Robin
@@ -4009,12 +4107,6 @@ namespace Nektar
 
 
 
-            bfr.GetFldBase(m_session,m_bndCondExpansions);
-            //bfr.UpdateBase(time);
-            cout << "baseflow" << bfr.m_baseflow[0].size() << "\n";
-
-            //cout << "bndcondexpansion" << m_bndCondExpansions.size() << "\n";
-
             for(cnt = i = 0; i < m_bndCondExpansions.size(); ++i)
             {
                 MultiRegions::ExpListSharedPtr locExpList;
@@ -4027,72 +4119,21 @@ namespace Nektar
 
                     locExpList = m_bndCondExpansions[i];
 
-                    int npoints    = locExpList->GetNpoints();
-                    Array<OneD, NekDouble> x0(npoints, 0.0);
-                    Array<OneD, NekDouble> x1(npoints, 0.0);
-                    Array<OneD, NekDouble> x2(npoints, 0.0);
-                    Array<OneD, NekDouble> coeffphys(npoints);
+                    cout <<  "getrobinbcinfo " << m_robinprimcoeff[i][m_robinprimcoeff[i].size()/2] << "\n";
 
-                    locExpList->GetCoords(x0, x1, x2);
-
-                    LibUtilities::Equation coeffeqn =
-                        std::static_pointer_cast<
-                            SpatialDomains::RobinBoundaryCondition>
-                        (m_bndConditions[i])->m_robinPrimitiveCoeff;
-
-                    // evalaute coefficient
-                    coeffeqn.Evaluate(x0, x1, x2, 0.0, coeffphys);
-
-                    cout << "coeffphys0 " << coeffphys[0] << "\n";
-                    cout << "coeffphys1 " << coeffphys[npoints/2] << "\n";
-
-                    cout << "locexplist Npoints " << locExpList->GetNpoints() << "\n";
-
-                    Array<OneD, Array<OneD, NekDouble> > normalsexp ;
-                    Array<OneD, Array<OneD, NekDouble> > normals;
-
+                    
                     for (e = 0; e < locExpList->GetExpSize(); ++e)
                     {
-                        elmtid = ElmtID[cnt + e];
-                        normals = GetExp(elmtid)->GetTraceNormal(TraceID[cnt + e]);
-                        cout << "e " << e << "\n";
-
-                        for (int j = 0; j < normals.size(); ++j)
-                        {
-
-                            //Vmath::Vcopy(normals[0].size(), normals[j], 1, normalsexp[j] , 1);
-                        }
-                    }
-
-                    for(e = 0; e < locExpList->GetExpSize(); ++e)
-                    {
                         RobinBCInfoSharedPtr rInfo =
-                            MemoryManager<RobinBCInfo>
-                            ::AllocateSharedPtr(
-                                TraceID[cnt+e],
-                                Array_tmp = coeffphys +
-                                locExpList->GetPhys_Offset(e));
+                            MemoryManager<RobinBCInfo>::AllocateSharedPtr(
+                                TraceID[cnt + e],
+                                Array_tmp =
+                                    m_robinprimcoeff[i] + locExpList->GetPhys_Offset(e));
 
-                        elmtid = ElmtID[cnt+e];
-                        cout << "elmtid " << elmtid << "\n";
-                        cout << "traceid " << TraceID[cnt+e] << "\n";
-
-
-                        //Array<OneD, Array<OneD, NekDouble> > normals = GetExp(elmtid)->GetTraceNormal(TraceID[cnt+e]);
-
-                        //cout << "normal size1 " << normals.size() << "\n";
-                        //cout << "normal size2 " << normals[0].size() << "\n";
-                        cout << "normal " << normals[0][0] << "\n";
-                        cout << "normal " << normals[1][0] << "\n";
-                        
-                        
-                        cout << "arraytemp size1 " << Array_tmp.size() << "\n";
-                        cout << "arraytemp " << Array_tmp[0] << "\n";
-                        
-                        //////////
+                        elmtid = ElmtID[cnt + e];
 
                         // make link list if necessary
-                        if(returnval.count(elmtid) != 0)
+                        if (returnval.count(elmtid) != 0)
                         {
                             rInfo->next = returnval.find(elmtid)->second;
                         }
@@ -4101,6 +4142,9 @@ namespace Nektar
                 }
                 cnt += m_bndCondExpansions[i]->GetExpSize();
             }
+
+
+
 
             return returnval;
         }

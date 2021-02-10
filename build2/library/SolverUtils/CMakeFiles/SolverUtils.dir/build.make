@@ -668,18 +668,18 @@ library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingProgrammatic.cpp.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolverUtils.dir/Forcing/ForcingProgrammatic.cpp.s"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/Forcing/ForcingProgrammatic.cpp -o CMakeFiles/SolverUtils.dir/Forcing/ForcingProgrammatic.cpp.s
 
-library/SolverUtils/CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o: library/SolverUtils/CMakeFiles/SolverUtils.dir/flags.make
-library/SolverUtils/CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o: ../library/SolverUtils/BaseFlow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object library/SolverUtils/CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o"
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o -c /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/BaseFlow.cpp
+library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o: library/SolverUtils/CMakeFiles/SolverUtils.dir/flags.make
+library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o: ../library/SolverUtils/DriverArpack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o"
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o -c /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/DriverArpack.cpp
 
-library/SolverUtils/CMakeFiles/SolverUtils.dir/BaseFlow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolverUtils.dir/BaseFlow.cpp.i"
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/BaseFlow.cpp > CMakeFiles/SolverUtils.dir/BaseFlow.cpp.i
+library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArpack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolverUtils.dir/DriverArpack.cpp.i"
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/DriverArpack.cpp > CMakeFiles/SolverUtils.dir/DriverArpack.cpp.i
 
-library/SolverUtils/CMakeFiles/SolverUtils.dir/BaseFlow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolverUtils.dir/BaseFlow.cpp.s"
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/BaseFlow.cpp -o CMakeFiles/SolverUtils.dir/BaseFlow.cpp.s
+library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArpack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolverUtils.dir/DriverArpack.cpp.s"
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Documents/gitproject/nektar++/library/SolverUtils/DriverArpack.cpp -o CMakeFiles/SolverUtils.dir/DriverArpack.cpp.s
 
 # Object files for target SolverUtils
 SolverUtils_OBJECTS = \
@@ -730,89 +730,90 @@ SolverUtils_OBJECTS = \
 "CMakeFiles/SolverUtils.dir/Forcing/ForcingMovingReferenceFrame.cpp.o" \
 "CMakeFiles/SolverUtils.dir/Forcing/ForcingNoise.cpp.o" \
 "CMakeFiles/SolverUtils.dir/Forcing/ForcingProgrammatic.cpp.o" \
-"CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o"
+"CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o"
 
 # External object files for target SolverUtils
 SolverUtils_EXTERNAL_OBJECTS =
 
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/Coupling.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/CouplingFile.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/Misc.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/SessionFunction.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/AdvectionSystem.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/Advection.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/Advection3DHomogeneous1D.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/AdvectionFR.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/AdvectionNonConservative.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/AdvectionWeakDG.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/Diffusion.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/Diffusion3DHomogeneous1D.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionLDG.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionLFR.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionLFRNS.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionIP.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Driver.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverAdaptive.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArnoldi.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverModifiedArnoldi.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverStandard.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverSteadyState.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/EquationSystem.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/Filter.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterAeroForces.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterAverageFields.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterCheckpoint.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterEnergy1D.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterEnergy.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterError.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterHistoryPoints.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterModalEnergy.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterMovingAverage.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterFieldConvert.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterThresholdMax.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterThresholdMin.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/RiemannSolvers/RiemannSolver.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/RiemannSolvers/UpwindSolver.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/RiemannSolvers/UpwindLDGSolver.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/UnsteadySystem.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/MMFSystem.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/Forcing.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingAbsorption.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingBody.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingMovingReferenceFrame.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingNoise.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingProgrammatic.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/build.make
-library/SolverUtils/libSolverUtils.so.5.0.0: library/FieldUtils/libFieldUtils.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/GlobalMapping/libGlobalMapping.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/MultiRegions/libMultiRegions.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/Collections/libCollections.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/LocalRegions/libLocalRegions.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SpatialDomains/libSpatialDomains.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/SolverUtils/libSolverUtils.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/SolverUtils/libSolverUtils.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/SolverUtils/libSolverUtils.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX shared library libSolverUtils.so"
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/Coupling.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/CouplingFile.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/Misc.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Core/SessionFunction.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/AdvectionSystem.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/Advection.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/Advection3DHomogeneous1D.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/AdvectionFR.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/AdvectionNonConservative.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Advection/AdvectionWeakDG.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/Diffusion.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/Diffusion3DHomogeneous1D.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionLDG.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionLFR.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionLFRNS.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Diffusion/DiffusionIP.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Driver.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverAdaptive.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArnoldi.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverModifiedArnoldi.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverStandard.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverSteadyState.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/EquationSystem.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/Filter.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterAeroForces.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterAverageFields.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterCheckpoint.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterEnergy1D.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterEnergy.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterError.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterHistoryPoints.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterModalEnergy.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterMovingAverage.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterFieldConvert.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterThresholdMax.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Filters/FilterThresholdMin.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/RiemannSolvers/RiemannSolver.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/RiemannSolvers/UpwindSolver.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/RiemannSolvers/UpwindLDGSolver.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/UnsteadySystem.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/MMFSystem.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/Forcing.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingAbsorption.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingBody.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingMovingReferenceFrame.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingNoise.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/Forcing/ForcingProgrammatic.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/build.make
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/FieldUtils/libFieldUtils-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/GlobalMapping/libGlobalMapping-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/MultiRegions/libMultiRegions-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/Collections/libCollections-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/LocalRegions/libLocalRegions-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/SolverUtils/libSolverUtils-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/SolverUtils/libSolverUtils-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/SolverUtils/libSolverUtils-g.so.5.0.0: library/SolverUtils/CMakeFiles/SolverUtils.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX shared library libSolverUtils-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SolverUtils.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && $(CMAKE_COMMAND) -E cmake_symlink_library libSolverUtils.so.5.0.0 libSolverUtils.so.5.0.0 libSolverUtils.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/SolverUtils && $(CMAKE_COMMAND) -E cmake_symlink_library libSolverUtils-g.so.5.0.0 libSolverUtils-g.so.5.0.0 libSolverUtils-g.so
 
-library/SolverUtils/libSolverUtils.so: library/SolverUtils/libSolverUtils.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/SolverUtils/libSolverUtils.so
+library/SolverUtils/libSolverUtils-g.so: library/SolverUtils/libSolverUtils-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/SolverUtils/libSolverUtils-g.so
 
 # Rule to build all files generated by this target.
-library/SolverUtils/CMakeFiles/SolverUtils.dir/build: library/SolverUtils/libSolverUtils.so
+library/SolverUtils/CMakeFiles/SolverUtils.dir/build: library/SolverUtils/libSolverUtils-g.so
 
 .PHONY : library/SolverUtils/CMakeFiles/SolverUtils.dir/build
 

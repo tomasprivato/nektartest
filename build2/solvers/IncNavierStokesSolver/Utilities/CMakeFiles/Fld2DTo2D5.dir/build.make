@@ -77,34 +77,35 @@ Fld2DTo2D5_OBJECTS = \
 # External object files for target Fld2DTo2D5
 Fld2DTo2D5_EXTERNAL_OBJECTS =
 
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/Fld2DTo2D5.cpp.o
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build.make
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/SolverUtils/libSolverUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/FieldUtils/libFieldUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/GlobalMapping/libGlobalMapping.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/MultiRegions/libMultiRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/Collections/libCollections.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/LocalRegions/libLocalRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/SpatialDomains/libSpatialDomains.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/StdRegions/libStdRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: library/LibUtilities/libLibUtilities.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libboost_thread.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libboost_iostreams.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libboost_program_options.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libboost_filesystem.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libboost_system.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: /usr/lib/x86_64-linux-gnu/libz.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libtinyxml.a
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libblas.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/liblapack.so
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libscotch.a
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: ThirdParty/dist/lib/libscotcherr.a
-solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Fld2DTo2D5"
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/Fld2DTo2D5.cpp.o
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build.make
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/SolverUtils/libSolverUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/FieldUtils/libFieldUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/GlobalMapping/libGlobalMapping-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/MultiRegions/libMultiRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/Collections/libCollections-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/LocalRegions/libLocalRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/StdRegions/libStdRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: library/LibUtilities/libLibUtilities-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libarpack.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libboost_thread.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libboost_iostreams.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libboost_program_options.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libboost_filesystem.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libboost_system.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: /usr/lib/x86_64-linux-gnu/libz.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libtinyxml.a
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: /usr/lib/x86_64-linux-gnu/liblapack.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: /usr/lib/x86_64-linux-gnu/libblas.so
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libscotch.a
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: ThirdParty/dist/lib/libscotcherr.a
+solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Fld2DTo2D5-g"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/solvers/IncNavierStokesSolver/Utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fld2DTo2D5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build: solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5
+solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build: solvers/IncNavierStokesSolver/Utilities/Fld2DTo2D5-g
 
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/Fld2DTo2D5.dir/build
 

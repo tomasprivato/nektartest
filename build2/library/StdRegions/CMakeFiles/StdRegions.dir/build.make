@@ -301,44 +301,45 @@ StdRegions_OBJECTS = \
 # External object files for target StdRegions
 StdRegions_EXTERNAL_OBJECTS =
 
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion0D.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion1D.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion2D.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion3D.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdHexExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdMatrixKey.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdNodalPrismExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdNodalTetExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdNodalTriExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdPrismExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdPyrExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdQuadExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdSegExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdPointExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdTetExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdTriExp.cpp.o
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/build.make
-library/StdRegions/libStdRegions.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/StdRegions/libStdRegions.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/StdRegions/libStdRegions.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/StdRegions/libStdRegions.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library libStdRegions.so"
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion0D.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion1D.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion2D.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdExpansion3D.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdHexExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdMatrixKey.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdNodalPrismExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdNodalTetExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdNodalTriExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdPrismExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdPyrExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdQuadExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdSegExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdPointExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdTetExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/StdTriExp.cpp.o
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/build.make
+library/StdRegions/libStdRegions-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/StdRegions/libStdRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/StdRegions/libStdRegions-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/StdRegions/libStdRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/StdRegions/libStdRegions-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/StdRegions/libStdRegions-g.so.5.0.0: library/StdRegions/CMakeFiles/StdRegions.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library libStdRegions-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/StdRegions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StdRegions.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/StdRegions && $(CMAKE_COMMAND) -E cmake_symlink_library libStdRegions.so.5.0.0 libStdRegions.so.5.0.0 libStdRegions.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/StdRegions && $(CMAKE_COMMAND) -E cmake_symlink_library libStdRegions-g.so.5.0.0 libStdRegions-g.so.5.0.0 libStdRegions-g.so
 
-library/StdRegions/libStdRegions.so: library/StdRegions/libStdRegions.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/StdRegions/libStdRegions.so
+library/StdRegions/libStdRegions-g.so: library/StdRegions/libStdRegions-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/StdRegions/libStdRegions-g.so
 
 # Rule to build all files generated by this target.
-library/StdRegions/CMakeFiles/StdRegions.dir/build: library/StdRegions/libStdRegions.so
+library/StdRegions/CMakeFiles/StdRegions.dir/build: library/StdRegions/libStdRegions-g.so
 
 .PHONY : library/StdRegions/CMakeFiles/StdRegions.dir/build
 

@@ -146,7 +146,7 @@ void LinearisedAdvection::v_InitObject(
     
 
 
-    bf.GetFldBase(m_session,pFields);
+    bf.GetFldBase(m_session,pFields,false,0.0);
     bf.GetBaseGrad(m_session,pFields);
 
 }
@@ -228,7 +228,38 @@ void LinearisedAdvection::v_Advect(
     }
 
     // Evaluation of the base flow for periodic cases
-    bf.UpdateBase(time);
+    //bf.UpdateBase(time);
+
+    string file = bf.m_session->GetFunctionFilename("BaseFlow", 0);
+
+    if (bf.m_slices > 1)
+    {
+        ASSERTL0(bf.m_session->GetFunctionType("BaseFlow", 0) ==
+                     LibUtilities::eFunctionTypeFile,
+                 "Base flow should be a sequence of files.");
+
+        int step =
+            fmod(time, bf.m_period) / bf.m_session->GetParameter("TimeStep");
+
+        size_t found = file.find("%d");
+        ASSERTL0(
+            found != string::npos && file.find("%d", found + 1) == string::npos,
+            "Since N_slices is specified, the filename provided for function "
+            "'BaseFlow' must include exactly one instance of the format "
+            "specifier '%d', to index the time-slices.");
+        char *buffer = new char[file.length() + 8];
+
+        sprintf(buffer, file.c_str(), step);
+
+
+        cout << buffer << " linearisedadvection\n";
+
+        bf.ImportFldBase(buffer, fields, 1);
+
+        delete[] buffer;
+        // DFT(file,pFields,m_slices);
+    }
+
     bf.UpdateGradBase(fields);
     
     //Evaluate the linearised advection term

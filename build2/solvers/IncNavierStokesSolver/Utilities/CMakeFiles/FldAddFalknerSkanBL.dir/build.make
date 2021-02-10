@@ -77,34 +77,35 @@ FldAddFalknerSkanBL_OBJECTS = \
 # External object files for target FldAddFalknerSkanBL
 FldAddFalknerSkanBL_EXTERNAL_OBJECTS =
 
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/FldAddFalknerSkanBL.cpp.o
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/build.make
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/SolverUtils/libSolverUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/FieldUtils/libFieldUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/GlobalMapping/libGlobalMapping.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/MultiRegions/libMultiRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/Collections/libCollections.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/LocalRegions/libLocalRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/SpatialDomains/libSpatialDomains.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/StdRegions/libStdRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: library/LibUtilities/libLibUtilities.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libboost_thread.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libboost_iostreams.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libboost_program_options.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libboost_filesystem.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libboost_system.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: /usr/lib/x86_64-linux-gnu/libz.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libtinyxml.a
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libblas.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/liblapack.so
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libscotch.a
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: ThirdParty/dist/lib/libscotcherr.a
-solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FldAddFalknerSkanBL"
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/FldAddFalknerSkanBL.cpp.o
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/build.make
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/SolverUtils/libSolverUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/FieldUtils/libFieldUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/GlobalMapping/libGlobalMapping-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/MultiRegions/libMultiRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/Collections/libCollections-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/LocalRegions/libLocalRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/StdRegions/libStdRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: library/LibUtilities/libLibUtilities-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libarpack.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libboost_thread.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libboost_iostreams.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libboost_program_options.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libboost_filesystem.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libboost_system.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: /usr/lib/x86_64-linux-gnu/libz.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libtinyxml.a
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: /usr/lib/x86_64-linux-gnu/liblapack.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: /usr/lib/x86_64-linux-gnu/libblas.so
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libscotch.a
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: ThirdParty/dist/lib/libscotcherr.a
+solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FldAddFalknerSkanBL-g"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/solvers/IncNavierStokesSolver/Utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FldAddFalknerSkanBL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/build: solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL
+solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/build: solvers/IncNavierStokesSolver/Utilities/FldAddFalknerSkanBL-g
 
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/FldAddFalknerSkanBL.dir/build
 

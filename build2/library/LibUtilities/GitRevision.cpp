@@ -42,7 +42,7 @@ namespace Nektar
 {
     namespace NekConstants
     {
-        extern const std::string kGitSha1   = "f94e6cc5024e6bb6d4a2079886b21cce415ba238";
+        extern const std::string kGitSha1   = "76746819c951612d96139eed234165f8d8437343";
         extern const std::string kGitBranch = "refs/heads/master";
     }
 }

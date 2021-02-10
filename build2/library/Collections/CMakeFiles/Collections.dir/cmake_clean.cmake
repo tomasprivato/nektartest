@@ -8,9 +8,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Collections.dir/IProductWRTDerivBase.cpp.o"
   "CMakeFiles/Collections.dir/Operator.cpp.o"
   "CMakeFiles/Collections.dir/PhysDeriv.cpp.o"
-  "libCollections.pdb"
-  "libCollections.so"
-  "libCollections.so.5.0.0"
+  "libCollections-g.pdb"
+  "libCollections-g.so"
+  "libCollections-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

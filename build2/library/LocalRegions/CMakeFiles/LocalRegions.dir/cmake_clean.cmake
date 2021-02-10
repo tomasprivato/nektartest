@@ -16,9 +16,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/LocalRegions.dir/SegExp.cpp.o"
   "CMakeFiles/LocalRegions.dir/TetExp.cpp.o"
   "CMakeFiles/LocalRegions.dir/TriExp.cpp.o"
-  "libLocalRegions.pdb"
-  "libLocalRegions.so"
-  "libLocalRegions.so.5.0.0"
+  "libLocalRegions-g.pdb"
+  "libLocalRegions-g.so"
+  "libLocalRegions-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

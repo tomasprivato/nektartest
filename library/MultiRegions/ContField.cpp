@@ -530,6 +530,7 @@ namespace Nektar
             if(contNcoeffs - NumDirBcs > 0)
             {
                 GlobalLinSysSharedPtr LinSys = GetGlobalLinSys(key);
+                
                 LinSys->Solve(locrhs,inout,m_locToGloMap,dirForcing);
 
             }
@@ -578,7 +579,9 @@ namespace Nektar
         GlobalLinSysSharedPtr ContField::GetGlobalLinSys(
                                 const GlobalLinSysKey &mkey)
         {
-            return m_globalLinSysManager[mkey];
+            
+            //return m_globalLinSysManager[mkey];
+            return GenGlobalLinSys(mkey);
         }
 
         GlobalLinSysSharedPtr ContField::GenGlobalLinSys(
@@ -587,6 +590,7 @@ namespace Nektar
             ASSERTL1(mkey.LocToGloMapIsDefined(),
                      "To use method must have a AssemblyMap "
                      "attached to key");
+            
             return ExpList::GenGlobalLinSys(mkey, m_locToGloMap);
         }
 
@@ -940,6 +944,7 @@ namespace Nektar
 
             GlobalLinSysKey key(StdRegions::eHelmholtz,m_locToGloMap,factors,
                                 varcoeff,varfactors);
+            
             
             GlobalSolve(key,wsp,outarray,dirForcing);
         }

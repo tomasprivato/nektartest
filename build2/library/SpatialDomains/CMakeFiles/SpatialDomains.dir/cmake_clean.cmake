@@ -19,9 +19,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/SpatialDomains.dir/SegGeom.cpp.o"
   "CMakeFiles/SpatialDomains.dir/TetGeom.cpp.o"
   "CMakeFiles/SpatialDomains.dir/TriGeom.cpp.o"
-  "libSpatialDomains.pdb"
-  "libSpatialDomains.so"
-  "libSpatialDomains.so.5.0.0"
+  "libSpatialDomains-g.pdb"
+  "libSpatialDomains-g.so"
+  "libSpatialDomains-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

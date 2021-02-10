@@ -175,42 +175,43 @@ GlobalMapping_OBJECTS = \
 # External object files for target GlobalMapping
 GlobalMapping_EXTERNAL_OBJECTS =
 
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/Deform.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/Mapping.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXofXZ.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXofZ.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXYofZ.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXYofXY.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingGeneral.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingTranslation.cpp.o
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build.make
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/MultiRegions/libMultiRegions.so.5.0.0
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/Collections/libCollections.so.5.0.0
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/LocalRegions/libLocalRegions.so.5.0.0
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/SpatialDomains/libSpatialDomains.so.5.0.0
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/StdRegions/libStdRegions.so.5.0.0
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/LibUtilities/libLibUtilities.so.5.0.0
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libblas.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/liblapack.so
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libscotch.a
-library/GlobalMapping/libGlobalMapping.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
-library/GlobalMapping/libGlobalMapping.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library libGlobalMapping.so"
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/Deform.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/Mapping.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXofXZ.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXofZ.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXYofZ.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingXYofXY.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingGeneral.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/MappingTranslation.cpp.o
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build.make
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/MultiRegions/libMultiRegions-g.so.5.0.0
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/Collections/libCollections-g.so.5.0.0
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/LocalRegions/libLocalRegions-g.so.5.0.0
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/StdRegions/libStdRegions-g.so.5.0.0
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/LibUtilities/libLibUtilities-g.so.5.0.0
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libarpack.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libboost_thread.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libboost_iostreams.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libboost_program_options.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libboost_filesystem.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libboost_system.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libz.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libtinyxml.a
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/liblapack.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: /usr/lib/x86_64-linux-gnu/libblas.so
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libscotch.a
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: ThirdParty/dist/lib/libscotcherr.a
+library/GlobalMapping/libGlobalMapping-g.so.5.0.0: library/GlobalMapping/CMakeFiles/GlobalMapping.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library libGlobalMapping-g.so"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/library/GlobalMapping && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GlobalMapping.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/tomas/Documents/gitproject/nektar++/build2/library/GlobalMapping && $(CMAKE_COMMAND) -E cmake_symlink_library libGlobalMapping.so.5.0.0 libGlobalMapping.so.5.0.0 libGlobalMapping.so
+	cd /home/tomas/Documents/gitproject/nektar++/build2/library/GlobalMapping && $(CMAKE_COMMAND) -E cmake_symlink_library libGlobalMapping-g.so.5.0.0 libGlobalMapping-g.so.5.0.0 libGlobalMapping-g.so
 
-library/GlobalMapping/libGlobalMapping.so: library/GlobalMapping/libGlobalMapping.so.5.0.0
-	@$(CMAKE_COMMAND) -E touch_nocreate library/GlobalMapping/libGlobalMapping.so
+library/GlobalMapping/libGlobalMapping-g.so: library/GlobalMapping/libGlobalMapping-g.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate library/GlobalMapping/libGlobalMapping-g.so
 
 # Rule to build all files generated by this target.
-library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build: library/GlobalMapping/libGlobalMapping.so
+library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build: library/GlobalMapping/libGlobalMapping-g.so
 
 .PHONY : library/GlobalMapping/CMakeFiles/GlobalMapping.dir/build
 

@@ -101,58 +101,59 @@ CFLStep_EXTERNAL_OBJECTS = \
 "/home/tomas/Documents/gitproject/nektar++/build2/solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Forcing/ForcingMovingBody.cpp.o" \
 "/home/tomas/Documents/gitproject/nektar++/build2/solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Forcing/ForcingStabilityCoupledLNS.cpp.o"
 
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/CFLStep.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/CoupledLinearNS.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/CoupledLocalToGlobalC0ContMap.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/IncNavierStokes.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/VelocityCorrectionScheme.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/VelocityCorrectionSchemeWeakPressure.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/SmoothedProfileMethod.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/VCSMapping.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/Extrapolate.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/StandardExtrapolate.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/MappingExtrapolate.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/SubSteppingExtrapolate.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/SubSteppingExtrapolateWeakPressure.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/WeakPressureExtrapolate.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/AdjointAdvection.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/LinearisedAdvection.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/NavierStokesAdvection.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/SkewSymmetricAdvection.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/AlternateSkewAdvection.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/NoAdvection.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Filters/FilterReynoldsStresses.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Filters/FilterMovingBody.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Filters/FilterAeroForcesSPM.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Forcing/ForcingMovingBody.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Forcing/ForcingStabilityCoupledLNS.cpp.o
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/build.make
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/SolverUtils/libSolverUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/FieldUtils/libFieldUtils.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/GlobalMapping/libGlobalMapping.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/MultiRegions/libMultiRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/Collections/libCollections.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/LocalRegions/libLocalRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/SpatialDomains/libSpatialDomains.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/StdRegions/libStdRegions.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: library/LibUtilities/libLibUtilities.so.5.0.0
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libboost_thread.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libboost_iostreams.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libboost_program_options.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libboost_filesystem.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libboost_system.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: /usr/lib/x86_64-linux-gnu/libz.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libtinyxml.a
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libblas.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/liblapack.so
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libscotch.a
-solvers/IncNavierStokesSolver/Utilities/CFLStep: ThirdParty/dist/lib/libscotcherr.a
-solvers/IncNavierStokesSolver/Utilities/CFLStep: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CFLStep"
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/CFLStep.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/CoupledLinearNS.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/CoupledLocalToGlobalC0ContMap.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/IncNavierStokes.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/VelocityCorrectionScheme.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/VelocityCorrectionSchemeWeakPressure.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/SmoothedProfileMethod.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/VCSMapping.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/Extrapolate.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/StandardExtrapolate.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/MappingExtrapolate.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/SubSteppingExtrapolate.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/SubSteppingExtrapolateWeakPressure.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/EquationSystems/WeakPressureExtrapolate.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/AdjointAdvection.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/LinearisedAdvection.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/NavierStokesAdvection.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/SkewSymmetricAdvection.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/AlternateSkewAdvection.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/AdvectionTerms/NoAdvection.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Filters/FilterReynoldsStresses.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Filters/FilterMovingBody.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Filters/FilterAeroForcesSPM.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Forcing/ForcingMovingBody.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/CMakeFiles/IncNavierStokesSolver-obj.dir/Forcing/ForcingStabilityCoupledLNS.cpp.o
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/build.make
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/SolverUtils/libSolverUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/FieldUtils/libFieldUtils-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/GlobalMapping/libGlobalMapping-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/MultiRegions/libMultiRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/Collections/libCollections-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/LocalRegions/libLocalRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/SpatialDomains/libSpatialDomains-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/StdRegions/libStdRegions-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: library/LibUtilities/libLibUtilities-g.so.5.0.0
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libarpack.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libboost_thread.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libboost_iostreams.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libboost_program_options.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libboost_filesystem.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libboost_system.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: /usr/lib/x86_64-linux-gnu/libz.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libtinyxml.a
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: /usr/lib/x86_64-linux-gnu/liblapack.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: /usr/lib/x86_64-linux-gnu/libblas.so
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libscotch.a
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: ThirdParty/dist/lib/libscotcherr.a
+solvers/IncNavierStokesSolver/Utilities/CFLStep-g: solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CFLStep-g"
 	cd /home/tomas/Documents/gitproject/nektar++/build2/solvers/IncNavierStokesSolver/Utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CFLStep.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/build: solvers/IncNavierStokesSolver/Utilities/CFLStep
+solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/build: solvers/IncNavierStokesSolver/Utilities/CFLStep-g
 
 .PHONY : solvers/IncNavierStokesSolver/Utilities/CMakeFiles/CFLStep.dir/build
 

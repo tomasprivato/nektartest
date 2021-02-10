@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/SolverUtils.dir/Advection/AdvectionNonConservative.cpp.o"
   "CMakeFiles/SolverUtils.dir/Advection/AdvectionWeakDG.cpp.o"
   "CMakeFiles/SolverUtils.dir/AdvectionSystem.cpp.o"
-  "CMakeFiles/SolverUtils.dir/BaseFlow.cpp.o"
   "CMakeFiles/SolverUtils.dir/Core/Coupling.cpp.o"
   "CMakeFiles/SolverUtils.dir/Core/CouplingFile.cpp.o"
   "CMakeFiles/SolverUtils.dir/Core/Misc.cpp.o"
@@ -19,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SolverUtils.dir/Driver.cpp.o"
   "CMakeFiles/SolverUtils.dir/DriverAdaptive.cpp.o"
   "CMakeFiles/SolverUtils.dir/DriverArnoldi.cpp.o"
+  "CMakeFiles/SolverUtils.dir/DriverArpack.cpp.o"
   "CMakeFiles/SolverUtils.dir/DriverModifiedArnoldi.cpp.o"
   "CMakeFiles/SolverUtils.dir/DriverStandard.cpp.o"
   "CMakeFiles/SolverUtils.dir/DriverSteadyState.cpp.o"
@@ -47,9 +47,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/SolverUtils.dir/RiemannSolvers/UpwindLDGSolver.cpp.o"
   "CMakeFiles/SolverUtils.dir/RiemannSolvers/UpwindSolver.cpp.o"
   "CMakeFiles/SolverUtils.dir/UnsteadySystem.cpp.o"
-  "libSolverUtils.pdb"
-  "libSolverUtils.so"
-  "libSolverUtils.so.5.0.0"
+  "libSolverUtils-g.pdb"
+  "libSolverUtils-g.so"
+  "libSolverUtils-g.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

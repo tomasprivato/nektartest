@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/tomas/Documents/gitproject/nektar++/build2
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -82,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"diffusion-solver\" \"diffusionsolver\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"mmfdiffusion\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -100,18 +112,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -167,157 +167,19 @@ depend:
 	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f CMakeFiles/Makefile2 solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule
-.PHONY : solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule
-
-# Convenience name for target.
-MMFDiffusion: solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/rule
-
-.PHONY : MMFDiffusion
-
-# fast build rule for target.
-MMFDiffusion/fast:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build
-.PHONY : MMFDiffusion/fast
-
-# Convenience name for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f CMakeFiles/Makefile2 solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule
-
-# Convenience name for target.
-DiffusionSolverTimeInt: solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/rule
-
-.PHONY : DiffusionSolverTimeInt
-
-# fast build rule for target.
-DiffusionSolverTimeInt/fast:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build
-.PHONY : DiffusionSolverTimeInt/fast
-
-# Convenience name for target.
-solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f CMakeFiles/Makefile2 solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule
-.PHONY : solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule
-
-# Convenience name for target.
-DiffusionSolver: solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/rule
-
-.PHONY : DiffusionSolver
-
-# fast build rule for target.
-DiffusionSolver/fast:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build
-.PHONY : DiffusionSolver/fast
-
-DiffusionSolver.o: DiffusionSolver.cpp.o
-
-.PHONY : DiffusionSolver.o
-
-# target to build an object file
-DiffusionSolver.cpp.o:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/DiffusionSolver.cpp.o
-.PHONY : DiffusionSolver.cpp.o
-
-DiffusionSolver.i: DiffusionSolver.cpp.i
-
-.PHONY : DiffusionSolver.i
-
-# target to preprocess a source file
-DiffusionSolver.cpp.i:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/DiffusionSolver.cpp.i
-.PHONY : DiffusionSolver.cpp.i
-
-DiffusionSolver.s: DiffusionSolver.cpp.s
-
-.PHONY : DiffusionSolver.s
-
-# target to generate assembly for a file
-DiffusionSolver.cpp.s:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir/DiffusionSolver.cpp.s
-.PHONY : DiffusionSolver.cpp.s
-
-DiffusionSolverTimeInt.o: DiffusionSolverTimeInt.cpp.o
-
-.PHONY : DiffusionSolverTimeInt.o
-
-# target to build an object file
-DiffusionSolverTimeInt.cpp.o:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/DiffusionSolverTimeInt.cpp.o
-.PHONY : DiffusionSolverTimeInt.cpp.o
-
-DiffusionSolverTimeInt.i: DiffusionSolverTimeInt.cpp.i
-
-.PHONY : DiffusionSolverTimeInt.i
-
-# target to preprocess a source file
-DiffusionSolverTimeInt.cpp.i:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/DiffusionSolverTimeInt.cpp.i
-.PHONY : DiffusionSolverTimeInt.cpp.i
-
-DiffusionSolverTimeInt.s: DiffusionSolverTimeInt.cpp.s
-
-.PHONY : DiffusionSolverTimeInt.s
-
-# target to generate assembly for a file
-DiffusionSolverTimeInt.cpp.s:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/build.make solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir/DiffusionSolverTimeInt.cpp.s
-.PHONY : DiffusionSolverTimeInt.cpp.s
-
-MMFDiffusion.o: MMFDiffusion.cpp.o
-
-.PHONY : MMFDiffusion.o
-
-# target to build an object file
-MMFDiffusion.cpp.o:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/MMFDiffusion.cpp.o
-.PHONY : MMFDiffusion.cpp.o
-
-MMFDiffusion.i: MMFDiffusion.cpp.i
-
-.PHONY : MMFDiffusion.i
-
-# target to preprocess a source file
-MMFDiffusion.cpp.i:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/MMFDiffusion.cpp.i
-.PHONY : MMFDiffusion.cpp.i
-
-MMFDiffusion.s: MMFDiffusion.cpp.s
-
-.PHONY : MMFDiffusion.s
-
-# target to generate assembly for a file
-MMFDiffusion.cpp.s:
-	cd /home/tomas/Documents/gitproject/nektar++/build2 && $(MAKE) -f solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/build.make solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir/MMFDiffusion.cpp.s
-.PHONY : MMFDiffusion.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MMFDiffusion"
-	@echo "... install/strip"
-	@echo "... DiffusionSolverTimeInt"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... DiffusionSolver"
-	@echo "... DiffusionSolver.o"
-	@echo "... DiffusionSolver.i"
-	@echo "... DiffusionSolver.s"
-	@echo "... DiffusionSolverTimeInt.o"
-	@echo "... DiffusionSolverTimeInt.i"
-	@echo "... DiffusionSolverTimeInt.s"
-	@echo "... MMFDiffusion.o"
-	@echo "... MMFDiffusion.i"
-	@echo "... MMFDiffusion.s"
 .PHONY : help
 
 

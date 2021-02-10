@@ -4,7 +4,7 @@
 /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/rebuild_cache.dir
 /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/edit_cache.dir
 /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/test.dir
-/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/lapack-3.7.0.dir
+/home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/arpack-ng-1.0.dir
 /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/boost.dir
 /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/install/local.dir
 /home/tomas/Documents/gitproject/nektar++/build2/CMakeFiles/zlib-1.2.7.dir
@@ -68,16 +68,13 @@
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/CompressibleFlowSolver/CMakeFiles/rebuild_cache.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/CompressibleFlowSolver/CMakeFiles/edit_cache.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/CompressibleFlowSolver/CMakeFiles/test.dir
+/home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/install/strip.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/install/local.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/install.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/list_install_components.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/rebuild_cache.dir
-/home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/MMFDiffusion.dir
-/home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/install/strip.dir
-/home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/DiffusionSolverTimeInt.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/edit_cache.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/test.dir
-/home/tomas/Documents/gitproject/nektar++/build2/solvers/DiffusionSolver/CMakeFiles/DiffusionSolver.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DummySolver/CMakeFiles/install/strip.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DummySolver/CMakeFiles/install/local.dir
 /home/tomas/Documents/gitproject/nektar++/build2/solvers/DummySolver/CMakeFiles/install.dir

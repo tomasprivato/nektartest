@@ -696,6 +696,7 @@ void BoundaryConditions::ReadBoundaryConditions(TiXmlElement *conditions)
                             AllocateSharedPtr(
                                 m_session, equation1, equation2,
                                 userDefined, filename, boundaryRegionComm));
+                        robinCondition->SetIsTimeDependent(isTimeDependent);
                         (*boundaryConditions)[*iter] = robinCondition;
                     }
                     else

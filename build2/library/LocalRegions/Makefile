@@ -82,7 +82,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"diffusion-solver\" \"diffusionsolver\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"mmfdiffusion\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"collections\" \"dev\" \"fieldconvert\" \"fieldutils\" \"globalmapping\" \"incnavierstokes-solver\" \"libutilities\" \"localregions\" \"multiregions\" \"nekmesh\" \"nekmeshutils\" \"solverutils\" \"spatialdomains\" \"stdregions\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
