@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<NEKTAR>
+    <EXPANSIONS>
+        <E COMPOSITE="C[10]" NUMMODES="9" FIELDS="u,v,p" TYPE="MODIFIED" />
+    </EXPANSIONS>
+    <FILTERS>
+        <FILTER TYPE="AeroForces">
+            <PARAM NAME="OutputFile">DragLift</PARAM>
+            <PARAM NAME="OutputFrequency">10</PARAM>
+            <PARAM NAME="Boundary"> B[0] </PARAM>
+        </FILTER> 
+        <!--<FILTER TYPE="HistoryPoints">
+            <PARAM NAME="OutputFile">V2</PARAM>
+            <PARAM NAME="OutputFrequency">100</PARAM>
+            <PARAM NAME="Points">
+                10 0.0 0
+            </PARAM>
+        </FILTER>
+        <FILTER TYPE="HistoryPoints">
+            <PARAM NAME="OutputFile">V3</PARAM>
+            <PARAM NAME="OutputFrequency">100</PARAM>
+            <PARAM NAME="Points">
+                10 -0.15 0
+            </PARAM>
+        </FILTER> -->
+
+    </FILTERS>
+    <CONDITIONS>
+         <SOLVERINFO>
+            <I PROPERTY="SolverType"            VALUE="VelocityCorrectionScheme"   />
+            <I PROPERTY="EqType"                VALUE="UnsteadyNavierStokes"       />
+            <I PROPERTY="EvolutionOperator"     VALUE="Nonlinear"                  />
+     <!--   <I PROPERTY="AdvectionForm"         VALUE="Convective"                 /> -->
+            <I PROPERTY="Projection"            VALUE="Galerkin"                 />
+            <I PROPERTY="TimeIntegrationMethod" VALUE="IMEXOrder3"                 />
+     <!--   <I PROPERTY="Driver"                VALUE="Standard"                   /> -->
+     <!--   <I PROPERTY="Homogeneous"           VALUE="1D"                         /> -->
+     <!--   <I PROPERTY="UseFFT"                VALUE="FFTW"                       /> -->
+            <I PROPERTY="GlobalSysSoln"         VALUE="DirectMultiLevelStaticCond" />
+            <I PROPERTY="SpectralHPDealiasing" 	VALUE="True"                       />
+            <I PROPERTY="SpectralVanishingViscosity"         VALUE="True"          />
+        </SOLVERINFO>
+
+         <PARAMETERS>
+            <P> TimeStep        = 0.001                </P>
+            <P> FinalTime       = 20.0                 </P>
+            <P> NumSteps        = FinalTime/TimeStep   </P>
+            <P> IO_CheckSteps   = 1                  </P>
+            <P> IO_InfoSteps    = 100                  </P>
+            <P> IO_CFLSteps     = 500                  </P>
+            <P> Re              = 100                  </P>
+            <P> Kinvis          = 1/Re                 </P>
+            <P> freq            = PI_2                  </P>
+            <P> A               = 1.0                  </P>
+            <P> SVVCutoffRatio  = 0.7                  </P>
+      <!--  <P> SVVDiffCoeff    = 0.1                  </P>  -->
+        </PARAMETERS>
+       
+        <VARIABLES>
+            <V ID="0"> u </V>
+            <V ID="1"> v </V>
+            <V ID="2"> p </V>
+        </VARIABLES>
+
+   <!--     <GLOBALSYSSOLNINFO>
+            <V VAR="u,v">
+                <I PROPERTY="GlobalSysSoln"
+                VALUE="IterativeStaticCond" />
+                <I PROPERTY="Preconditioner"
+                VALUE="LowEnergyBlock"/>
+                <I PROPERTY="IterativeSolverTolerance" VALUE="1e-8"/>
+            </V>
+            <V VAR="p">
+                <I PROPERTY="GlobalSysSoln"
+                VALUE="IterativeStaticCond" />
+                <I PROPERTY="Preconditioner"
+                VALUE="FullLinearSpaceWithLowEnergyBlock"/>
+                <I PROPERTY="IterativeSolverTolerance" VALUE="1e-6"/>
+            </V>
+        </GLOBALSYSSOLNINFO> -->
+
+        <BOUNDARYREGIONS>
+            <B ID="0"> C[0] </B> <!-- wall -->
+            <B ID="1"> C[1] </B> <!-- outlet -->
+            <B ID="2"> C[2] </B> <!-- inlet -->
+            <B ID="3"> C[3] </B> <!-- symmetry -->
+        </BOUNDARYREGIONS>
+
+        <BOUNDARYCONDITIONS>
+            <REGION REF="0">
+                <D VAR="u" VALUE="0" />
+                <D VAR="v" VALUE="0" />
+                <N VAR="p" USERDEFINEDTYPE="H" VALUE="0" />
+            </REGION>
+            <REGION REF="1">
+                <N VAR="u" VALUE="0" />
+                <N VAR="v" VALUE="0" />
+                <D VAR="p" VALUE="0" />
+            </REGION>
+            <REGION REF="2">
+                <D VAR="u" USERDEFINEDTYPE="TimeDependent" VALUE="1+A*cos(freq*t)" />
+                <D VAR="v" VALUE="0" />
+                <N VAR="p" USERDEFINEDTYPE="H" VALUE="0" />
+            </REGION>
+            <REGION REF="3">
+                <N VAR="u" VALUE="0" />
+                <D VAR="v" VALUE="0" />
+                <N VAR="p" VALUE="0" />
+            </REGION>
+        </BOUNDARYCONDITIONS>
+
+        <FUNCTION NAME="InitialConditions">
+            <E VAR="u" VALUE="0" />
+            <E VAR="v" VALUE="0" />
+            <E VAR="p" VALUE="0" />
+        </FUNCTION>
+        
+    </CONDITIONS>
+</NEKTAR>
+
